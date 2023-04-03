@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+    <header class="header">
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a class="list-item__link" href="#"> Главная </a>
+        </li>
+        <li class="header__list-item">
+          <a class="list-item__link" href="#"> ФОТО И ВИДЕО </a>
+        </li>
+        <li>
+          <a class="list-item__link" href="/">
+            <img src="./img/logo.svg" alt="логотип" />
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a class="list-item__link" href="#"> Форма отзыва </a>
+        </li>
+        <li class="header__list-item">
+          <a class="list-item__link" href="#"> HTML ACADEMY </a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="promo">
+        <img class="promo__image" src="./img/Intro.png" alt="картинка" />
+      </section>
+      <section class="features">
+        <h2 class="features__title">
+          СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!
+        </h2>
+        <p class="features__description">
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+      </section>
+      <section class="realtown">
+        <div class="realtown__wrapper">
+          <h2 class="realtown__title">НАСТОЯЩИЙ ГОРОДОК</h2>
+          <p class="realtown__number">— №1 —</p>
+          <p class="realtown__description">
+            СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+          </p>
+        </div>
+        <div class="">
+          <img class="realtown__image" src="./img/picture.png" alt="Домик" />
+        </div>
+      </section>
+      <section class="benefits">
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <img
+              class="benefits__picture"
+              src="./img/icon-house.svg"
+              alt="Жильё"
+            />
+            <h2 class="benefits__title">Жилье</h2>
+            <p class="benefits__description">
+              Рекомендуем пожить в <br />
+              настоящем мотеле, все <br />
+              как в кино!
+            </p>
+          </li>
+          <li class="benefits__item">
+            <img
+              class="benefits__picture"
+              src="./img/icon-burger.svg"
+              alt="бургер"
+            />
+            <h2 class="benefits__title">ЕДА</h2>
+            <p class="benefits__description">
+              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+            </p>
+          </li>
+          <li class="benefits__item">
+            <img
+              class="benefits__picture"
+              src="./img/icon-gift.svg.svg"
+              alt="коробка"
+            />
+            <h2 class="benefits__title">СУВЕНИРЫ</h2>
+            <p class="benefits__description">
+              Не только китайского, но и местного производства!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="advantages">
+        <div class="advantages-picture">
+          <img class="" src="./img/photo-bridge.png" alt="фото-мост" />
+        </div>
+        <div class="advantages-wrapper">
+          <h2 class="advantages-title">ТАМ ЕСТЬ Мост дьявола</h2>
+          <p class="advantages-number">— №2 —</p>
+          <p class="advantages-paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+      </section>
+      <section class="information">
+        <ul class="information-list">
+          <li class="information-list__element">
+            <h2 class="information-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+            <p class="information-number">— №3 —</p>
+            <p class="information-paragraph">ВСЕ интересные места находятся очень близко</p>
+          </li>
+          <li class="information-list__element">
+            <h2 class="information-title">КРАСИВАЯ ДОРОГА</h2>
+            <p class="information-number">— №4 —</p>
+            <p class="information-paragraph">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          </li>
+          <li class="information-list__element">
+            <h2 class="information-title">МАЛО ТУРИСТОВ</h2>
+            <p class="information-number">— №5 —</p>
+            <p class="nformation-paragraph">Большинство едет в гранд каньони толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <div class="search-wrapper">
+          <h2 class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p class="search-paragraph">
+            Укажите предполагаемые даты <br />поездки, и мы покажем вам лучшие
+            <br />предложения гостиниц в седоне
+          </p>
+          <button class="search-button">Найти Гостиницу</button>
+        </div>
+        <div>
+          <img class="search-button__map" src="./img/map-mobile.png" alt="карта" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">#visitSEDONA</div>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="/">
+            <img src="./img/socia-vk.svg" alt="вк" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="/">
+            <img src="./img/social-telegram.svg" alt="телеграмм" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="/">
+            <img src="./img/youtube.svg" alt="ютуб" />
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
