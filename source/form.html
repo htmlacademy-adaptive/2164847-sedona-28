@@ -7,39 +7,45 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <ul class="header__list">
-        <li class="header__list-item">
-          <a class="list-item__link" href="#"> Главная </a>
-        </li>
-        <li class="header__list-item">
-          <a class="list-item__link" href="#"> ФОТО И ВИДЕО </a>
-        </li>
-        <li>
-          <a class="list-item__link" href="/">
-            <img src="./img/logo.svg" alt="логотип" />
-          </a>
-        </li>
-        <li class="header__list-item">
-          <a class="list-item__link" href="#"> Форма отзыва </a>
-        </li>
-        <li class="header__list-item">
-          <a class="list-item__link" href="#"> HTML ACADEMY </a>
-        </li>
-      </ul>
-    </header>
+    <div class="header-wrapper">
+      <header class="header">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a class="header__item-link"> главная </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="#"> фото и видео </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="/">
+              <img src="./img/logo.svg" alt="логотип" />
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="#"> Форма отзыва </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="#"> HTML ACADEMY </a>
+          </li>
+        </ul>
+      </header>
+    </div>
     <main class="main-container">
       <section class="stats">
         <div class="stats__wrapper">
-        <img class="stats__photo" src="./img/catalog-promo.png" alt="каталог-фото"/>
+          <img
+            class="stats__photo"
+            src="./img/catalog-promo.png"
+            alt="каталог-фото"
+          />
         </div>
-      <h2 class="stats__title">Оставьте свой отзыв</h2>
-      <p class="stats__intro">
-        Помогите нашим отелям стать лучше!<br />
-        оставьте отзыв о<br />них, а также о посещенных вами<br />
-        достопримечательностях
-      </p>
-    </section>
+        <h2 class="stats__title">Оставьте свой отзыв</h2>
+        <p class="stats__intro">
+          Помогите нашим отелям стать лучше!<br />
+          оставьте отзыв о<br />них, а также о посещенных вами<br />
+          достопримечательностях
+        </p>
+      </section>
       <section class="information">
         <h2 class="information__header">Представьтесь:</h2>
         <form class="information__form" action="/">
@@ -48,75 +54,136 @@
             <input class="information__field" type="text" id="username" />
           </div>
           <div class="form-field">
-            <label class="information__surname" for="surname"> ФАМИЛИЯ*: </label>
+            <label class="information__surname" for="surname">
+              ФАМИЛИЯ*:
+            </label>
             <input class="information__field" type="text" id="surname" />
           </div>
           <div class="form-field">
-            <label class="information__patronymic" for="patronymic"> Отчество: </label>
-            <input class="information__field"  type="text" id="patronymic" />
+            <label class="information__patronymic" for="patronymic">
+              Отчество:
+            </label>
+            <input class="information__field" type="text" id="patronymic" />
           </div>
 
           <hr />
           <h2 class="information__contacts">Контактная информация:</h2>
           <div class="form-field">
-            <label class="information__telephone" for ="telephone"> Контактный телефон*: </label>
-            <input class="information__field"  type="text" id="telephone" />
+            <label class="information__telephone" for="telephone">
+              Контактный телефон*:
+            </label>
+            <input class="information__field" type="text" id="telephone" />
           </div>
           <div class="form-field">
-            <label class="information__email" for="email"> Электронная почта*: </label>
+            <label class="information__email" for="email">
+              Электронная почта*:
+            </label>
             <input class="information__field" type="text" id="email" />
           </div>
           <hr />
-         <div class="impression">
-          <h2 class="impression__title">Ваше Общее впечатление:</h2>
+          <div class="impression">
+            <h2 class="impression__title">Ваше Общее впечатление:</h2>
 
-          <input  class="radio" type="radio" name="vpeshatlenie" id="vpeshatlenie1" />
-          <label class="impression__positive" for="vpeshatlenie1">Скорее положительное</label>
+            <input
+              class="radio"
+              type="radio"
+              name="vpeshatlenie"
+              id="vpeshatlenie1"
+            />
+            <label class="impression__positive" for="vpeshatlenie1"
+              >Скорее положительное</label
+            >
 
-          <input class="radio" type="radio" name="vpeshatlenie" id="vpeshatlenie2" />
-          <label class="impression__negative" for="vpeshatlenie2">Скорее отрицательное</label>
-         </div>
-
-          <input class="radio" type="radio" name="vpeshatlenie" id="vpeshatlenie3" />
-          <label class="impression__abstaining" for="vpeshatlenie3">Затрудняюсь ответить</label>
-          <h2 class="visiting">
-            посещенные<br />
-            достопримечательности:
-          </h2>
-          <input class="visiting__checkbox" type="checkbox" name="attractions" id="attractions1" />
-          <label class="visiting__label" for="attractions1">Мост Дьявола</label>
-          <input class="visiting__checkbox" type="checkbox" name="mount-bell" id="mount-bell" />
-          <label class="visiting__label" for="mount-bell">Гора-Колокол</label>
-          <input class="visiting__checkbox" type="checkbox" name="slide-park" id="lide-park" />
-          <label class="visiting__label" for="lide-park">Слайд-парк</label>
-          <input class="visiting__checkbox" type="checkbox" name="rhfcyst-crfk" id="rhfcyst-crfk" />
-          <label class="visiting__label" for="rhfcyst-crfk">Красные-скалы</label>
-          <hr />
-          <h2 class="emotions">Опишите свои эмоции:</h2>
-          <div class="form-field">
-            <label class="emotions__label" for="emotions1"></label>
-            <textarea class="emotions__textarea" name="emotions" id="emotions1" cols="30" rows="10"></textarea>
+            <input
+              class="radio"
+              type="radio"
+              name="vpeshatlenie"
+              id="vpeshatlenie2"
+            />
+            <label class="impression__negative" for="vpeshatlenie2"
+              >Скорее отрицательное</label
+            >
+            <input
+              class="radio"
+              type="radio"
+              name="vpeshatlenie"
+              id="vpeshatlenie3"
+            />
+            <label class="impression__abstaining" for="vpeshatlenie3"
+              >Затрудняюсь ответить</label
+            >
           </div>
-          <button class="emotions__emotions"></button>
-          <p class="emotions__item">* — обязательные поля</p>
+          <div class="visiting">
+            <h2 class="visiting__title">
+              посещенные<br />
+              достопримечательности:
+            </h2>
+            <input
+              class="visiting__checkbox"
+              type="checkbox"
+              name="attractions"
+              id="attractions1"
+            />
+            <label class="visiting__label" for="attractions1"
+              >Мост Дьявола</label
+            >
+            <input
+              class="visiting__checkbox"
+              type="checkbox"
+              name="mount-bell"
+              id="mount-bell"
+            />
+            <label class="visiting__label" for="mount-bell">Гора-Колокол</label>
+            <input
+              class="visiting__checkbox"
+              type="checkbox"
+              name="slide-park"
+              id="lide-park"
+            />
+            <label class="visiting__label" for="lide-park">Слайд-парк</label>
+            <input
+              class="visiting__checkbox"
+              type="checkbox"
+              name="rhfcyst-crfk"
+              id="rhfcyst-crfk"
+            />
+            <label class="visiting__label" for="rhfcyst-crfk"
+              >Красные-скалы</label
+            >
+          </div>
+          <div class="emotions">
+            <h2 class="emotions__title">Опишите свои эмоции:</h2>
+            <div class="form-field">
+              <label class="emotions__label" for="emotions1"></label>
+              <textarea
+                class="emotions__textarea"
+                name="emotions"
+                id="emotions1"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button class="emotions__emotions"></button>
+            <p class="emotions__item">* — обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">#visitSEDONA</div>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="/">
-            <img src="./img/socia-vk.svg" alt="вк" />
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vkontakte" href="/">
+            <img src="./img/social-vk.svg" alt="вк" />
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="/">
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="/">
             <img src="./img/social-telegram.svg" alt="телеграмм" />
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="/">
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="/">
             <img src="./img/youtube.svg" alt="ютуб" />
           </a>
         </li>

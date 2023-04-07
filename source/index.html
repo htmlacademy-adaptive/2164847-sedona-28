@@ -5,27 +5,29 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="header">
-      <ul class="header__list">
-        <li class="header__list-item">
-          <a class="list-item__link"> главная </a>
-        </li>
-        <li class="header__list-item">
-          <a class="list-item__link" href="#"> фото и видео </a>
-        </li>
-        <li>
-          <a class="list-item__link" href="/">
-            <img src="./img/logo.svg" alt="логотип" />
-          </a>
-        </li>
-        <li class="header__list-item">
-          <a class="list-item__link" href="#"> Форма отзыва </a>
-        </li>
-        <li class="header__list-item">
-          <a class="list-item__link" href="#"> HTML ACADEMY </a>
-        </li>
-      </ul>
-    </header>
+    <div class="header-wrapper">
+      <header class="header">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a class="header__item-link"> главная </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="#"> фото и видео </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="/">
+              <img src="./img/logo.svg" alt="логотип" />
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="#"> Форма отзыва </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="#"> HTML ACADEMY </a>
+          </li>
+        </ul>
+      </header>
+    </div>
     <main>
       <section class="promo">
         <img class="promo__image" src="./img/intro.png" alt="картинка" />
@@ -46,7 +48,7 @@
             СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
           </p>
         </div>
-        <div class="">
+        <div class="realtown">
           <img class="realtown__image" src="./img/picture.png" alt="Домик" />
         </div>
       </section>
@@ -96,36 +98,38 @@
         <div class="advantages__wrapper">
           <h2 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h2>
           <p class="advantages__number">— №2 —</p>
-          <p class="advantages_-paragraph">
+          <p class="advantages__paragraph">
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </div>
       </section>
-      <section class="information">
-        <ul class="information_-list">
-          <li class="information__list__element">
-            <h2 class="information__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-            <p class="information__number">— №3 —</p>
-            <p class="information__paragraph">
-              ВСЕ интересные места находятся очень близко
-            </p>
-          </li>
-          <li class="information__list__element">
-            <h2 class="information__title">КРАСИВАЯ ДОРОГА</h2>
-            <p class="information__number">— №4 —</p>
-            <p class="information__paragraph">
-              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
-            </p>
-          </li>
-          <li class="information_-list__element">
-            <h2 class="information_-title">МАЛО ТУРИСТОВ</h2>
-            <p class="information_-number">— №5 —</p>
-            <p class="nformation_-paragraph">
-              Большинство едет в гранд каньони толпится там
-            </p>
-          </li>
-        </ul>
-      </section>
+      <div class="information-wrapper">
+        <section class="information">
+          <ul class="information__list">
+            <li class="information__list__element">
+              <h2 class="information__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+              <p class="information__number">— №3 —</p>
+              <p class="information__paragraph">
+                ВСЕ интересные места находятся очень близко
+              </p>
+            </li>
+            <li class="information__list__element">
+              <h2 class="information__title">КРАСИВАЯ ДОРОГА</h2>
+              <p class="information__number">— №4 —</p>
+              <p class="information__paragraph">
+                ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+              </p>
+            </li>
+            <li class="information__list__element">
+              <h2 class="information__title">МАЛО ТУРИСТОВ</h2>
+              <p class="information__number">— №5 —</p>
+              <p class="information__paragraph">
+                Большинство едет в гранд каньони толпится там
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
       <section class="search">
         <div class="search__wrapper">
           <h2 class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
@@ -146,19 +150,19 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">#visitSEDONA</div>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="/">
-            <img src="./img/socia-vk.svg" alt="вк" />
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vkontakte" href="/">
+            <img src="./img/social-vk.svg" alt="вк" />
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="/">
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="/">
             <img src="./img/social-telegram.svg" alt="телеграмм" />
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="/">
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="/">
             <img src="./img/youtube.svg" alt="ютуб" />
           </a>
         </li>
