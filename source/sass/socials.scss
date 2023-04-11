@@ -1,13 +1,23 @@
-.socials {
-  &__item {
-    list-style-type: none;
+.socials  {
+  &--vkontakt {
+
   }
-  &__text {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #000000;
+  &--telegram {
+
   }
+  &--youtube {
+
+  }
+
+}
+.socials__item {
+  list-style-type: none;
+}
+.socials__text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
 }

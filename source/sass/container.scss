@@ -1,12 +1,18 @@
 .container {
-  &__title {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    color: #000000;
-  }
-  &__slogan {
-  }
+}
+.container__title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.container__slogan {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
 }
