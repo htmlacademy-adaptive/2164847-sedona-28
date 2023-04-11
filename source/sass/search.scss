@@ -1,0 +1,28 @@
+.search {
+  &__title {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+  }
+  &__paragraph {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+  }
+  &__button {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFFFFF;
+    background: #81B3D2;
+    text-decoration: none;
+  }
+}
