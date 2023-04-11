@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <base href="https://htmlacademy-adaptive.github.io/2164847-sedona-28/4/">
+</head>
+  <body>
+    <div class="header-wrapper">
+      <header class="header">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a class="header__item-link"> главная </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="#"> фото и видео </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="/">
+              <img src="./img/logo.svg" alt="логотип" />
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="#"> Форма отзыва </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="#"> HTML ACADEMY </a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <main class="main-container">
+      <section class="stats">
+        <div class="stats__wrapper">
+          <img
+            class="stats__photo"
+            src="./img/catalog-promo.png"
+            alt="каталог-фото"
+          />
+        </div>
+        <h2 class="stats__title">Оставьте свой отзыв</h2>
+        <p class="stats__intro">
+          Помогите нашим отелям стать лучше!<br />
+          оставьте отзыв о<br />них, а также о посещенных вами<br />
+          достопримечательностях
+        </p>
+      </section>
+      <section class="feedback-form">
+        <h2 class="feedback-form__header">Представьтесь:</h2>
+        <form class="feedback-form__form" action="/">
+          <div class="feedback-form__field">
+            <label class="feedback-form__name" for="username"> ИМЯ*: </label>
+            <input class="feedback-form__field" type="text" id="username" />
+          </div>
+          <div class="feedback-form__field">
+            <label class="feedback-form__surname" for="surname">
+              ФАМИЛИЯ*:
+            </label>
+            <input class="feedback-form__field" type="text" id="surname" />
+          </div>
+          <div class="feedback-form__field">
+            <label class="feedback-form__patronymic" for="patronymic">
+              Отчество:
+            </label>
+            <input class="feedback-form__field" type="text" id="patronymic" />
+          </div>
+
+          <hr />
+          <h2 class="feedback-form__contacts">Контактная информация:</h2>
+          <div class="feedback-form__field">
+            <label class="feedback-form__telephone" for="telephone">
+              Контактный телефон*:
+            </label>
+            <input class="feedback-form__field" type="text" id="telephone" />
+          </div>
+          <div class="feedback-form__field">
+            <label class="feedback-form__email" for="email">
+              Электронная почта*:
+            </label>
+            <input class="feedback-form__field" type="text" id="email" />
+          </div>
+          <hr />
+          <div class="impression">
+            <h2 class="impression__title">Ваше Общее впечатление:</h2>
+
+            <input
+              class="radio"
+              type="radio"
+              name="vpeshatlenie"
+              id="vpeshatlenie1"
+            />
+            <label class="impression__positive" for="vpeshatlenie1"
+              >Скорее положительное</label
+            >
+
+            <input
+              class="radio"
+              type="radio"
+              name="vpeshatlenie"
+              id="vpeshatlenie2"
+            />
+            <label class="impression__negative" for="vpeshatlenie2"
+              >Скорее отрицательное</label
+            >
+            <input
+              class="radio"
+              type="radio"
+              name="vpeshatlenie"
+              id="vpeshatlenie3"
+            />
+            <label class="impression__abstaining" for="vpeshatlenie3"
+              >Затрудняюсь ответить</label
+            >
+          </div>
+          <div class="visiting">
+            <h2 class="visiting__title">
+              посещенные<br />
+              достопримечательности:
+            </h2>
+            <input
+              class="visiting__checkbox"
+              type="checkbox"
+              name="attractions"
+              id="attractions1"
+            />
+            <label class="visiting__label" for="attractions1"
+              >Мост Дьявола</label
+            >
+            <input
+              class="visiting__checkbox"
+              type="checkbox"
+              name="mount-bell"
+              id="mount-bell"
+            />
+            <label class="visiting__label" for="mount-bell">Гора-Колокол</label>
+            <input
+              class="visiting__checkbox"
+              type="checkbox"
+              name="slide-park"
+              id="lide-park"
+            />
+            <label class="visiting__label" for="lide-park">Слайд-парк</label>
+            <input
+              class="visiting__checkbox"
+              type="checkbox"
+              name="rhfcyst-crfk"
+              id="rhfcyst-crfk"
+            />
+            <label class="visiting__label" for="rhfcyst-crfk"
+              >Красные-скалы</label
+            >
+          </div>
+          <div class="emotions">
+            <h2 class="emotions__title">Опишите свои эмоции:</h2>
+            <div class="form-field">
+              <label class="emotions__label" for="emotions1"></label>
+              <textarea
+                class="emotions__textarea"
+                name="emotions"
+                id="emotions1"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button class="emotions__emotions"></button>
+            <p class="emotions__item">* — обязательные поля</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">#VISITSEDONA</div>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vkontakte" href="/">
+            <img src="./img/social-vk.svg" alt="вк" />
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="/">
+            <img src="./img/social-telegram.svg" alt="телеграмм" />
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="/">
+            <img src="./img/youtube.svg" alt="ютуб" />
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a
+          class="copyright__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
+          <img
+            class="footer__logo-footer"
+            src="./img/logo-footer.svg"
+            alt="лого-футер"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
