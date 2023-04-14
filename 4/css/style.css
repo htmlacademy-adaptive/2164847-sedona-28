@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/ptsans.woff") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2");
 }
 @font-face {
   font-family: "PT Sans";
@@ -64,7 +64,7 @@
   color: #333333;
 }
 
-.features __title {
+.features__title {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -211,7 +211,7 @@
   color: #333333;
 }
 
-.card __title {
+.card__title {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -220,7 +220,7 @@
   color: #000000;
 }
 
-.card __descriptions {
+.card__descriptions {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -229,7 +229,7 @@
   color: #333333;
 }
 
-.card _text {
+.card__text {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -256,7 +256,7 @@
   color: #000000;
 }
 
-.stats __title {
+.stats__title {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -265,7 +265,7 @@
   color: #000000;
 }
 
-.stats __intro {
+.stats__intro {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -310,7 +310,7 @@
   color: #000000;
 }
 
-.visiting __title {
+.visiting__title {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -319,7 +319,7 @@
   color: #000000;
 }
 
-.visiting __label {
+.visiting__label {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
