@@ -1,0 +1,19 @@
+.header {
+  background: #81B3D2;
+}
+.header__list {
+  list-style-type: none;
+}
+.header__item-link {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
