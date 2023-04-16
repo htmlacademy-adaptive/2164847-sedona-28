@@ -1,11 +1,15 @@
+@import "global/variables.scss";
+
 .header {
-  background: #81B3D2;
 }
 .header__list {
+  background: #81b3d2;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 .header__item-link {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -14,6 +18,19 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
+}
+.header__logo {
+  height: 96px;
+}
+@media (min-width: $tablet-width) {
+  .header__list {
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+  }
+  .header__item-link {
+    color: #000000;
+  }
 }

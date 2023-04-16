@@ -1,5 +1,9 @@
+@import "global/variables.scss";
+
 .advantages {
   background: #81b3d2;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .advantages__title {
   font-family: "PT Sans";
@@ -25,4 +29,10 @@
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    grid-template-columns:2fr 1fr;
+  }
 }

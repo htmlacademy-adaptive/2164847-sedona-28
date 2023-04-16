@@ -1,4 +1,7 @@
+@import "global/variables.scss";
 .footer {
+  display: flex;
+  flex-direction: column;
 }
 .footer__wrapper {
   font-family: "PT Sans";
@@ -7,4 +10,10 @@
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+}
+@media (min-width: $tablet-width) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -1,5 +1,8 @@
 .realtown {
   background: #81b3d2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .realtown__title {
