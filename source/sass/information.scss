@@ -1,8 +1,11 @@
+@import "global/variables.scss";
 .information {
   background: #ffffff;
 }
 .information__list {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .information__title {
   font-family: "PT Sans";
@@ -27,4 +30,9 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+@media (min-width: $tablet-width) {
+  .information__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

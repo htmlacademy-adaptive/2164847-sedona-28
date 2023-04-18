@@ -1,3 +1,10 @@
+@import "global/variables.scss";
+
+.benefits__list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .benefits__item {
   list-style-type: none;
 }
@@ -16,4 +23,9 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+@media (min-width: $tablet-width) {
+  .benefits__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
