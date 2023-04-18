@@ -1,3 +1,4 @@
+@import "global/variables.scss";
 .card {
 }
 .card__title {
@@ -28,6 +29,28 @@
   text-decoration: none;
 }
 .card__photo {
+  height: 280px;
   width: 100%;
   object-fit: cover;
+}
+@media (min-width: $tablet-width) {
+  .card__photo {
+    height: 267px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card__wrapper--full {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card__wrapper--full {
+    grid-column: span 3;
+  }
 }

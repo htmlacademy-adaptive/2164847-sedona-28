@@ -12,10 +12,10 @@
       <header class="header">
         <ul class="header__list">
           <li class="header__list-item">
-            <a class="header__item-link"> главная </a>
+            <a href="/" class="header__item-link"> главная </a>
           </li>
           <li class="header__list-item">
-            <a class="header__item-link" href="#"> фото и видео </a>
+            <a class="header__item-link" href="/catalog.html"> фото и видео </a>
           </li>
           <li class="header__list-item">
             <a class="header__item-link" href="/">
@@ -23,7 +23,7 @@
             </a>
           </li>
           <li class="header__list-item">
-            <a class="header__item-link" href="#"> Форма отзыва </a>
+            <a class="header__item-link" href="/form.html"> Форма отзыва </a>
           </li>
           <li class="header__list-item">
             <a class="header__item-link" href="#"> HTML ACADEMY </a>
@@ -32,9 +32,9 @@
       </header>
     </div>
     <main>
-      <div class="block-wrapper">
-        <a href="#">
-          <img src="./img/catalog-promo.png" alt="каталог-фото" />
+      <div class="promo">
+        <a  href="#">
+          <img class="promo__image" src="./img/catalog-promo.png" alt="каталог-фото" />
         </a>
         <section class="block">
           <h2 class="block__title">Фото и видео</h2>
@@ -44,7 +44,7 @@
           </p>
         </section>
         <section class="card">
-          <div class="card__wrapper">
+          <div class="card__wrapper card__wrapper--full">
             <a class="card__like-link" href="#">
               <img
                 class="card__photo"
@@ -93,7 +93,7 @@
             <h2 class="card__title">Дорога на север</h2>
             <p class="card__descriptions">Автор фото: Петр</p>
             <div class="card__like-counter">
-              <a class="card__like-links" href="#">
+              <a class="card__like-link" href="#">
                 <img
                   class="card__like-image"
                   src="./img/like-icon.svg"
