@@ -262,6 +262,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .block__slogan {
@@ -271,6 +272,7 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  text-align: center;
 }
 
 .card__title {
@@ -300,6 +302,39 @@
   color: #000000;
 }
 
+.card__like-link {
+  text-decoration: none;
+}
+
+.card__photo {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .card__photo {
+    height: 267px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card__wrapper--full {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card__wrapper--full {
+    grid-column: span 3;
+  }
+}
 .container__title {
   font-family: "PT Sans";
   font-style: normal;
@@ -307,6 +342,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .container__slogan {
@@ -316,6 +352,12 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
+}
+
+.container__video {
+  width: 100%;
+  object-fit: cover;
 }
 
 .stats__title {
@@ -325,6 +367,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .stats__intro {
@@ -334,6 +377,7 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  text-align: center;
 }
 
 .impression__title {
@@ -343,6 +387,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .impression__positive {
@@ -379,6 +424,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .visiting__label {
@@ -396,6 +442,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .emotions__item {
@@ -414,6 +461,12 @@
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.emotions__button {
+  display: block;
+  width: 100%;
 }
 
 .search__title {
@@ -469,6 +522,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .feedback-form__name {
@@ -505,6 +559,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .feedback-form__telephone {
@@ -523,5 +578,56 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+
+.feedback-form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.emotions__button {
+  background: #81b3d2;
+  outline: none;
+  border: none;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 16px 30px;
+}
+
+@media (min-width: 768px) {
+  .feedback-form__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .impression,
+.visiting,
+.emotions {
+    grid-column: span 2;
+  }
+
+  .feedback-form__row {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .impression .feedback-form__row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .visiting .feedback-form__row {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 /*# sourceMappingURL=style.css.map */
