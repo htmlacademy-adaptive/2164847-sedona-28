@@ -8,24 +8,58 @@
 .benefits__item {
   list-style-type: none;
 }
+
 .benefits__title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  margin-left: 7px;
 }
+
 .benefits__description {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  padding-left: 47px;
+  margin: 0;
 }
+
+.benefits__picture {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.benefits__item-slogan {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: $tablet-width) {
   .benefits__list {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .benefits__item-slogan {
+    flex-direction: column;
+  }
+
+  .benefits__description {
+    text-align: center;
+    max-width: 190px;
+    display: block;
+  }
+
+  .benefits__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

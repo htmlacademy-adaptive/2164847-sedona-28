@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="header__wrapper">
-      <header class="header">
+      <header class="header header--closed">
         <a class="header__logo" href="/">
           <img src="./img/logo.svg" alt="логотип" />
         </a>
-        <ul class="header__list">
+        <ul class="header__list header__list">
           <li class="header__list-item">
             <a href="/" class="header__item-link"> главная </a>
           </li>
@@ -26,15 +26,28 @@
             <a class="header__item-link" href="#"> HTML ACADEMY </a>
           </li>
         </ul>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </header>
     </div>
     <main>
       <section class="promo">
-        <img class="promo__image" src="./img/intro.png" alt="картинка" />
+        <img
+          class="promo__image"
+          src="./img/mobile-intro.png"
+          srcset="
+            ./img/mobile-intro.png   320w,
+            ./img/tablet-intro.png   768w,
+            ./img/desktop-intro.png 1200w
+          "
+          src="./img/intro.png"
+          alt="картинка"
+        />
       </section>
       <section class="features">
         <h2 class="features__title">
-          СЕДОНА — небольшой городок в АРИЗОНЕ,заслуживающий большего!
+          СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!
         </h2>
         <p class="features__description">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -45,7 +58,8 @@
           <h2 class="realtown__title">НАСТОЯЩИЙ ГОРОДОК</h2>
           <p class="realtown__number">— №1 —</p>
           <p class="realtown__description">
-            СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+            СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,
+            ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
           </p>
         </div>
         <div class="realtown-house">
@@ -55,51 +69,60 @@
       <section class="benefits">
         <ul class="benefits__list">
           <li class="benefits__item">
-            <img
-              class="benefits__picture"
-              src="./img/icon-house.svg"
-              alt="Жильё"
-            />
-            <h2 class="benefits__title">Жилье</h2>
+            <div class="benefits__item-slogan">
+              <img
+                class="benefits__picture"
+                src="./img/icon-house.svg"
+                alt="Жильё"
+              />
+              <h2 class="benefits__title">Жилье</h2>
+            </div>
             <p class="benefits__description">
-              Рекомендуем пожить в <br />
-              настоящем мотеле, все <br />
+              Рекомендуем пожить в
+              настоящем мотеле, все
               как в кино!
             </p>
           </li>
           <li class="benefits__item">
-            <img
-              class="benefits__picture"
-              src="./img/icon-burger.svg"
-              alt="бургер"
-            />
-            <h2 class="benefits__title">ЕДА</h2>
+            <div class="benefits__item-slogan">
+              <img
+                class="benefits__picture"
+                src="./img/icon-burger.svg"
+                alt="бургер"
+              />
+              <h2 class="benefits__title">ЕДА</h2>
+            </div>
             <p class="benefits__description">
-              Всегда заказывайте фирменый<br> бургер, вы не разочаруетесь!
+              Всегда заказывайте фирменый
+              бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="benefits__item">
-            <img
-              class="benefits__picture"
-              src="./img/icon-gift.svg.svg"
-              alt="коробка"
-            />
-            <h2 class="benefits__title">СУВЕНИРЫ</h2>
+            <div class="benefits__item-slogan">
+              <img
+                class="benefits__picture"
+                src="./img/icon-gift.svg.svg"
+                alt="коробка"
+              />
+              <h2 class="benefits__title">СУВЕНИРЫ</h2>
+            </div>
             <p class="benefits__description">
-              Не только китайского, но и<br> местного производства!
+              Не только китайского, но и
+              местного производства!
             </p>
           </li>
         </ul>
       </section>
       <section class="advantages">
         <div class="advantages__picture">
-          <img class="" src="./img/photo-bridge.png" alt="фото-мост" />
+          <img class="advantages__picture-img" src="./img/photo-bridge.png" alt="фото-мост" />
         </div>
         <div class="advantages__wrapper">
           <h2 class="advantages__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
           <p class="advantages__number">— №2 —</p>
           <p class="advantages__paragraph">
-            Да, по нему можно пройти! Если вы<br> осмелитесь, конечно
+            Да, по нему можно пройти! Если вы
+            осмелитесь, конечно
           </p>
         </div>
       </section>
@@ -110,21 +133,23 @@
               <h2 class="information__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
               <p class="information__number">— №3 —</p>
               <p class="information__paragraph">
-                Все интересные места находятся<br> очень близко
+                Все интересные места находятся<br />
+                очень близко
               </p>
             </li>
             <li class="information__list__element">
               <h2 class="information__title">КРАСИВАЯ ДОРОГА</h2>
               <p class="information__number">— №4 —</p>
               <p class="information__paragraph">
-                ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА<br> СОВСЕМ НЕ СКУЧНО!
+                ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА
+                СОВСЕМ НЕ СКУЧНО!
               </p>
             </li>
             <li class="information__list__element">
               <h2 class="information__title">МАЛО ТУРИСТОВ</h2>
               <p class="information__number">— №5 —</p>
               <p class="information__paragraph">
-                Большинство едет в гранд каньон <br>и толпится там
+                Большинство едет в гранд каньон и толпится там
               </p>
             </li>
           </ul>
@@ -134,8 +159,8 @@
         <div class="search__wrapper">
           <h2 class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="search__paragraph">
-            Укажите предполагаемые даты <br />поездки, и мы покажем вам лучшие
-            <br />предложения гостиниц в седоне
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            предложения гостиниц в седоне
           </p>
           <a class="search__button" href="#">Найти Гостиницу</a>
         </div>
@@ -168,7 +193,7 @@
         </li>
       </ul>
       <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <span class="copyright__text">Разработано:</span>
         <a
           class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
@@ -180,5 +205,6 @@
         /></a>
       </div>
     </footer>
+    <script src="./js/menuuu.js"></script>
   </body>
 </html>

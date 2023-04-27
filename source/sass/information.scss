@@ -8,28 +8,32 @@
   grid-template-columns: 1fr;
 }
 .information__title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 .information__number {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  text-align: center;
 }
 .information__paragraph {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  text-align: center;
+  text-transform: uppercase;
 }
 @media (min-width: $tablet-width) {
   .information__list {

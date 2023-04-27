@@ -4,16 +4,35 @@
   flex-direction: column;
 }
 .footer__wrapper {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.footer__logo-footer {
+
+}
+.copyright__text {
+  text-transform: uppercase;
+  margin-right: 12px;
 }
 @media (min-width: $tablet-width) {
   .footer {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }

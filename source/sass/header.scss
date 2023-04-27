@@ -1,15 +1,38 @@
 @import "global/variables.scss";
 
+
+body {
+  margin: 0;
+  padding: 0;
+}
 .header {
+  background: transparent;
 }
 .header__list {
   background: #81b3d2;
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  min-height: 56px;
+  margin: 0;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+.header__list-item {
+  width: 100%;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
 .header__item-link {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -22,15 +45,86 @@
   text-decoration: none;
 }
 .header__logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header__logo img {
+  width: 185px;
   height: 96px;
 }
+.header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: block;
+  width: 70px;
+  height: 51px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.header--closed .header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #81b3d2;
+  box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+}
+.header--opened .header__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color:#ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+.header--closed .header__list {
+  display: none;
+}
 @media (min-width: $tablet-width) {
+  .header--closed .header__list {
+    display: flex;
+  }
   .header__list {
     flex-direction: row;
     justify-content: space-between;
     background: transparent;
+    position: static;
+
   }
   .header__item-link {
     color: #000000;
   }
+  .header__toggle {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width) {
 }
