@@ -4,20 +4,15 @@
 @import "features.scss";
 @import "footer.scss";
 @import "header.scss";
-@import "information-wrapper.scss";
 @import "information.scss";
 @import "promo.scss";
-@import "realtown-house.scss";
 @import "realtown.scss";
 @import "socials.scss";
-@import "block-wrapper.scss";
 @import "block.scss";
 @import "card.scss";
 @import "container.scss";
-@import "main-container.scss";
 @import "stats.scss";
 @import "impression.scss";
-@import "radio.scss";
 @import "visiting.scss";
 @import "emotions.scss";
 @import "search.scss";
@@ -36,4 +31,10 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
 }

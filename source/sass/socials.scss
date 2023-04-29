@@ -1,20 +1,17 @@
 @import "global/variables.scss";
+
 .socials {
   padding: 0;
   display: grid;
   grid-template-columns: 48px 48px 48px;
   column-gap: 6px;
   justify-content: center;
-  &--vkontakt {
-  }
-  &--telegram {
-  }
-  &--youtube {
-  }
 }
+
 .socials__item {
   list-style-type: none;
 }
+
 .socials__text {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -24,6 +21,4 @@
   color: #000000;
   display: flex;
   justify-content: center;
-}
-@media (min-width: $tablet-width) {
 }

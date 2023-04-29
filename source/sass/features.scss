@@ -1,8 +1,10 @@
 @import "global/variables.scss";
+
 .features {
   padding-left: 18px;
   padding-right: 18px;
 }
+
 .features__title {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -30,14 +32,16 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 @media (min-width: $tablet-width) {
   .features__title {
     font-size: 21px;
     padding-right: 124px;
     padding-left: 124px;
   }
+
   .features__description {
-  padding-left: 124px;
-  padding-right: 124px;
+    padding-left: 124px;
+    padding-right: 124px;
   }
 }

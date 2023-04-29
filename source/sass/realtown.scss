@@ -1,4 +1,5 @@
 @import "global/variables.scss";
+
 .realtown {
   background: #81b3d2;
   display: flex;
@@ -15,6 +16,7 @@
   line-height: 26px;
   color: #ffffff;
 }
+
 .realtown__number {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -25,6 +27,7 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .realtown__description {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -34,15 +37,17 @@
   line-height: 21px;
   color: #ffffff;
 }
+
 .realtown__image {
   width: 100%;
   object-fit: cover;
 }
+
 @media (min-width: $tablet-width) {
   .realtown {
-  display: grid;
-  grid-template-columns: 1fr 2fr ;
-  height: 256px;
-  overflow: hidden;
-}
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 256px;
+    overflow: hidden;
+  }
 }

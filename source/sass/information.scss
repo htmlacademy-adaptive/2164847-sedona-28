@@ -1,12 +1,15 @@
 @import "global/variables.scss";
+
 .information {
   background: #ffffff;
 }
+
 .information__list {
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr;
 }
+
 .information__title {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -16,6 +19,7 @@
   color: #000000;
   text-align: center;
 }
+
 .information__number {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -25,6 +29,7 @@
   color: #333333;
   text-align: center;
 }
+
 .information__paragraph {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -35,6 +40,7 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 @media (min-width: $tablet-width) {
   .information__list {
     grid-template-columns: 1fr 1fr 1fr;
