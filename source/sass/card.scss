@@ -1,46 +1,64 @@
 @import "global/variables.scss";
+
 .card {
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 .card__title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+  text-transform: uppercase;
 }
+
 .card__descriptions {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  margin-bottom: 11px;
 }
+
 .card__text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
 }
+
 .card__like-link {
   text-decoration: none;
 }
+
 .card__photo {
   height: 280px;
   width: 100%;
   object-fit: cover;
 }
+
+.card__wrapper {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .card__photo {
     height: 267px;
   }
+
   .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .card__wrapper--full {
     grid-column: span 2;
   }
@@ -50,6 +68,7 @@
   .card {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .card__wrapper--full {
     grid-column: span 3;
   }

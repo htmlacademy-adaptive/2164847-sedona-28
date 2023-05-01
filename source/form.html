@@ -8,14 +8,14 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="header-wrapper">
-      <header class="header">
-        <a class="header__logo" href="/">
+    <div class="header__wrapper">
+      <header class="header header--closed">
+        <a class="header__logo" href="">
           <img src="./img/logo.svg" alt="логотип" />
         </a>
-        <ul class="header__list">
+        <ul class="header__list header__list">
           <li class="header__list-item">
-            <a href="/" class="header__item-link"> главная </a>
+            <a href="" class="header__item-link"> главная </a>
           </li>
           <li class="header__list-item">
             <a class="header__item-link" href="/catalog.html"> фото и видео </a>
@@ -27,6 +27,9 @@
             <a class="header__item-link" href="#"> HTML ACADEMY </a>
           </li>
         </ul>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </header>
     </div>
     <main class="main-container">
@@ -41,7 +44,7 @@
         <h2 class="stats__title">Оставьте свой отзыв</h2>
         <p class="stats__intro">
           Помогите нашим отелям стать лучше!<br />
-          оставьте отзыв о<br />них, а также о посещенных вами<br />
+          оставьте отзыв о них, а также о посещенных вами
           достопримечательностях
         </p>
       </section>
@@ -51,23 +54,23 @@
             <div class="userdata">
               <h2 class="feedback-form__header">Представьтесь:</h2>
               <div class="feedback-form__field">
-                <label class="feedback-form__name" for="username">
+                <label class="feedback-form__label" for="username">
                   ИМЯ*:
                 </label>
-                <input class="feedback-form__field" type="text" id="username" />
+                <input class="feedback-form__input" type="text" id="username" />
               </div>
               <div class="feedback-form__field">
-                <label class="feedback-form__surname" for="surname">
+                <label class="feedback-form__label" for="surname">
                   ФАМИЛИЯ*:
                 </label>
-                <input class="feedback-form__field" type="text" id="surname" />
+                <input class="feedback-form__input" type="text" id="surname" />
               </div>
               <div class="feedback-form__field">
-                <label class="feedback-form__patronymic" for="patronymic">
+                <label class="feedback-form__label" for="patronymic">
                   Отчество:
                 </label>
                 <input
-                  class="feedback-form__field"
+                  class="feedback-form__input"
                   type="text"
                   id="patronymic"
                 />
@@ -77,20 +80,20 @@
             <div class="contacts">
               <h2 class="feedback-form__contacts">Контактная информация:</h2>
               <div class="feedback-form__field">
-                <label class="feedback-form__telephone" for="telephone">
+                <label class="feedback-form__label" for="telephone">
                   Контактный телефон*:
                 </label>
                 <input
-                  class="feedback-form__field"
+                  class="feedback-form__input"
                   type="text"
                   id="telephone"
                 />
               </div>
               <div class="feedback-form__field">
-                <label class="feedback-form__email" for="email">
+                <label class="feedback-form__label" for="email">
                   Электронная почта*:
                 </label>
-                <input class="feedback-form__field" type="text" id="email" />
+                <input class="feedback-form__input" type="text" id="email" />
               </div>
             </div>
 
@@ -99,35 +102,38 @@
               <div class="feedback-form__row">
                 <div class="form-field__checkbox">
                   <input
-                    class="radio"
+                    class="feedback-form__radio visually-hidden"
                     type="radio"
                     name="vpeshatlenie"
                     id="vpeshatlenie1"
                   />
-                  <label class="impression__positive" for="vpeshatlenie1"
-                    >Скорее положительное</label
+                  <label class="feedback-form__radio-label" for="vpeshatlenie1">
+                    <span class="feedback-form__radio-mark"></span>
+                    Скорее положительное</label
                   >
                 </div>
                 <div class="form-field__checkbox">
                   <input
-                    class="radio"
+                    class="feedback-form__radio visually-hidden"
                     type="radio"
                     name="vpeshatlenie"
                     id="vpeshatlenie2"
                   />
-                  <label class="impression__negative" for="vpeshatlenie2"
-                    >Скорее отрицательное</label
+                  <label class="feedback-form__radio-label" for="vpeshatlenie2">
+                    <span class="feedback-form__radio-mark"></span>
+                    Скорее отрицательное</label
                   >
                 </div>
                 <div class="form-field__checkbox">
                   <input
-                    class="radio"
+                    class="feedback-form__radio visually-hidden"
                     type="radio"
                     name="vpeshatlenie"
                     id="vpeshatlenie3"
                   />
-                  <label class="impression__abstaining" for="vpeshatlenie3"
-                    >Затрудняюсь ответить</label
+                  <label class="feedback-form__radio-label" for="vpeshatlenie3">
+                    <span class="feedback-form__radio-mark"></span>
+                    Затрудняюсь ответить</label
                   >
                 </div>
               </div>
@@ -138,46 +144,50 @@
               <div class="feedback-form__row">
                 <div class="form-field__checkbox">
                   <input
-                    class="visiting__checkbox"
+                    class="feedback-form__checkbox visually-hidden"
                     type="checkbox"
                     name="attractions"
                     id="attractions1"
                   />
-                  <label class="visiting__label" for="attractions1"
-                    >Мост Дьявола</label
-                  >
+                  <label class="feedback-form__checkbox-label" for="attractions1">
+                    <span class="feedback-form__checkbox-mark"></span>
+                    Мост Дьявола
+                  </label>
                 </div>
                 <div class="form-field__checkbox">
                   <input
-                    class="visiting__checkbox"
+                    class="feedback-form__checkbox visually-hidden"
                     type="checkbox"
                     name="mount-bell"
                     id="mount-bell"
                   />
-                  <label class="visiting__label" for="mount-bell"
-                    >Гора-Колокол</label
-                  >
+                  <label class="feedback-form__checkbox-label" for="mount-bell">
+                    <span class="feedback-form__checkbox-mark"></span>
+                    Гора-Колокол
+                  </label>
                 </div>
                 <div class="form-field__checkbox">
                   <input
-                    class="visiting__checkbox"
+                    class="feedback-form__checkbox visually-hidden"
                     type="checkbox"
                     name="slide-park"
                     id="lide-park"
                   />
-                  <label class="visiting__label" for="lide-park"
-                    >Слайд-парк</label
+                  <label class="feedback-form__checkbox-label" for="lide-park">
+                    <span class="feedback-form__checkbox-mark"></span>
+                    Слайд-парк</label
                   >
                 </div>
                 <div class="form-field__checkbox">
                   <input
-                    class="visiting__checkbox"
+                    class="feedback-form__checkbox visually-hidden"
                     type="checkbox"
                     name="rhfcyst-crfk"
                     id="rhfcyst-crfk"
                   />
-                  <label class="visiting__label" for="rhfcyst-crfk"
-                    >Красные-скалы</label
+                  <label class="feedback-form__checkbox-label" for="rhfcyst-crfk">
+                    <span class="feedback-form__checkbox-mark"></span>
+                    Красные-скалы</label
                   >
                 </div>
               </div>
@@ -185,7 +195,7 @@
 
             <div class="emotions">
               <h2 class="emotions__title">Опишите свои эмоции:</h2>
-              <div class="form-field">
+              <div class="feedback-form__field">
                 <label class="emotions__label" for="emotions1"></label>
                 <textarea
                   class="emotions__textarea"
@@ -193,6 +203,7 @@
                   id="emotions1"
                   cols="30"
                   rows="10"
+                  placeholder="Опишите подробно все свои восторги "
                 ></textarea>
               </div>
               <button type="submit" class="emotions__button">

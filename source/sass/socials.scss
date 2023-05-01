@@ -1,24 +1,24 @@
-.socials  {
-  display: flex;
-  &--vkontakt {
+@import "global/variables.scss";
 
-  }
-  &--telegram {
-
-  }
-  &--youtube {
-
-  }
-
+.socials {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 48px 48px 48px;
+  column-gap: 6px;
+  justify-content: center;
 }
+
 .socials__item {
   list-style-type: none;
 }
+
 .socials__text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+  display: flex;
+  justify-content: center;
 }

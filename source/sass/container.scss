@@ -1,7 +1,7 @@
-.container {
-}
+@import "global/variables.scss";
+
 .container__title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -9,8 +9,9 @@
   color: #000000;
   text-align: center;
 }
+
 .container__slogan {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -18,7 +19,16 @@
   color: #000000;
   text-align: center;
 }
+
 .container__video {
   width: 100%;
   object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .container__slogan {
+    text-align: center;
+    max-width: 445px;
+    margin: 0 auto;
+  }
 }

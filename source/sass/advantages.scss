@@ -5,34 +5,50 @@
   display: grid;
   grid-template-columns: 1fr;
 }
+
 .advantages__title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
+  text-align: center;
+  padding-top: 37px;
 }
+
 .advantages__number {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
+  margin-top: 11px;
+  margin-bottom: 17px;
 }
+
 .advantages__paragraph {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 21px;
   color: #ffffff;
+  text-align: center;
+  padding-bottom: 37px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
-    grid-template-columns:2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .advantages__picture-img {
+    width: 100%;
+    object-fit: cover;
+    height: 256px;
   }
 }

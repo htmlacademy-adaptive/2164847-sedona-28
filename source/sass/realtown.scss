@@ -1,32 +1,57 @@
+@import "global/variables.scss";
+
 .realtown {
   background: #81b3d2;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .realtown__title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
+  text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #ffffff;
+  padding-top: 33px;
 }
+
 .realtown__number {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  text-align: center;
   line-height: 21px;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 11px;
+  margin-bottom: 17px;
 }
+
 .realtown__description {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
+  text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
+  padding-bottom: 40px;
+}
+
+.realtown__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .realtown {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 256px;
+    overflow: hidden;
+  }
 }

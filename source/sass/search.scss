@@ -1,7 +1,17 @@
+@import "global/variables.scss";
+
 .search {
+  padding-top: 38px;
 }
+
+.search__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .search__title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -9,17 +19,22 @@
   color: #000000;
   text-align: center;
 }
+
 .search__paragraph {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
   text-align: center;
+  margin-top: 15px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
+
 .search__button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -27,9 +42,27 @@
   color: #ffffff;
   background: #81b3d2;
   text-decoration: none;
-  display: block;
   text-align: center;
+  margin-bottom: 49px;
+  display: inline-block;
+  padding: 16px 49px 16px 49px;
 }
+
 .search__button__map {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .search__button {
+    max-width: 458px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search__button {
+    margin-bottom: 66px;
+    max-width: 458px;
+    margin-top: 32px;
+  }
 }
