@@ -3,19 +3,50 @@
 .promo {
   height: 389px;
   width: 100%;
-  background: url("../img/promo-background-m.png") no-repeat center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/promo-background-m.jpg") no-repeat center center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-background-m@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .promo {
-    background-image: url("../img/tablet-intro.png");
+    background-image: url("../img/promo-background-t.jpg");
     height: 518px;
-  }
 
-  @media (min-width: $desktop-width) {
-    .promo {
-      background-image: url("../img/desktop-intro.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-background-t@2x.jpg");
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/promo-background-d.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-background-d@2x.jpg");
+    }
+  }
+}
+
+.promo--inside {
+  height: 158px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo--inside {
+    height: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo--inside {
+    height: 301px;
   }
 }

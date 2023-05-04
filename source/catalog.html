@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png" />
   </head>
   <body>
     <div class="header__wrapper">
@@ -33,137 +36,178 @@
       </header>
     </div>
     <main>
-      <div class="promo">
+      <div class="promo promo--inside">
         <img
           class="promo__image"
           src="./img/catalog-promo.svg"
           alt="каталог-фото"
         />
-        <section class="block">
-          <h2 class="block__title">Фото и видео</h2>
-          <p class="block__slogan">
-            Не можете решиться на путешествие из-за курса? Фотографии помогут
-            вам забыть о политике и экономике.
-          </p>
-        </section>
-        <section class="card">
-          <div class="card__wrapper card__wrapper--full">
-            <a class="card__like-link" href="#">
-              <picture>
-                <source
-                  srcset="
-                    ./img/card__photo-1-desktop.png    1x,
-                    ./img/card__photo-1-desktop@2x.png 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./img/card__photo-tablet1.png    1x,
-                    ./img/card__photo-tablet1@2x.png 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-
-                <img
-                  srcset="./img/card__photo-1-mobile@2x.png.png 2x"
-                  class="card__photo"
-                  src="./img/card__photo-1-mobile.png"
-                  alt="фото-просторы"
-                />
-              </picture>
-            </a>
-            <h2 class="card__title">неродные просторы</h2>
-            <p class="card__descriptions">Автор фото: Борис</p>
-            <div class="card__like-counter">
-              <a class="card__like-link" href="#">
-                <img
-                  class="card__like-image"
-                  src="./img/like-icon.svg"
-                  alt="лайк"
-                />
-              </a>
-              <span class="card__like-text">1350</span>
-            </div>
-          </div>
-          <div class="card__wrapper">
-            <a class="card__like-link" href="#">
-              <picture>
-                <source
-                srcset="">
-                <source
-                 srcset="">
-                <img
-                srcset=""
-                  class="card__photo"
-                  src="./img/photo-2.png"
-                  alt="растительность"
-                />
-              </picture>
-            </a>
-            <h2 class="card__title">Местная растительность</h2>
-            <p class="card__descriptions">Автор фото: Сергей</p>
-            <div class="card__like-counter">
-              <a class="card__like-link" href="#">
-                <picture>
-                  <source srcset="" />
-                  <source srcset="" />
-
-                  <img
-                    srcset=""
-                    class="card__like-image"
-                    src="./img/like-icon.svg"
-                    alt="лайк"
-                  />
-                </picture>
-              </a>
-              <span class="card__like-text">143</span>
-            </div>
-          </div>
-          <div class="card__wrapper">
-            <a class="card__like-link" href="#">
-              <img class="card__photo" src="./img/photo-3.png" alt="дорога" />
-            </a>
-            <h2 class="card__title">Дорога на север</h2>
-            <p class="card__descriptions">Автор фото: Петр</p>
-            <div class="card__like-counter">
-              <a class="card__like-link" href="#">
-                <img
-                  class="card__like-image"
-                  src="./img/like-icon.svg"
-                  alt="лайк"
-                />
-              </a>
-              <span class="card__like-text">96</span>
-            </div>
-          </div>
-          <div class="card__wrapper">
-            <a class="card__like-link" href="#">
-              <picture>
-                <source srcset="" />
-                <source srcset="" />
-                <img
-                  class="card__photo"
-                  src="./img/photo-4.png"
-                  alt="мост-дьявола"
-                />
-              </picture>
-            </a>
-            <h2 class="card__title">Мост дьявола</h2>
-            <p class="card__descriptions">Автор фото: Антон</p>
-            <div class="card__like-counter">
-              <a class="card__like-link" href="#">
-                <img
-                  class="card__like-image"
-                  src="./img/like-icon.svg"
-                  alt="лайк"
-                />
-              </a>
-              <span class="card__like-text">254</span>
-            </div>
-          </div>
-        </section>
       </div>
+      <section class="block">
+        <h2 class="block__title">Фото и видео</h2>
+        <p class="block__slogan">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+          забыть о политике и экономике.
+        </p>
+      </section>
+      <section class="card">
+        <div class="card__wrapper card__wrapper--full">
+          <a class="card__like-link" href="#">
+            <picture>
+              <source
+                srcset="
+                  ./img/card-photo-1-desktop.png    1x,
+                  ./img/card-photo-1-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/card-photo-tablet1.png    1x,
+                  ./img/card-photo-tablet1@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                srcset="./img/card__photo-1-mobile@2x.png 2x"
+                class="card__photo"
+                src="./img/card__photo-1-mobile.png"
+                alt="фото-просторы"
+              />
+            </picture>
+          </a>
+          <h2 class="card__title">неродные просторы</h2>
+          <p class="card__descriptions">Автор фото: Борис</p>
+          <div class="card__like-counter">
+            <a class="card__like-link" href="#">
+              <img
+                class="card__like-image"
+                src="./img/like-icon.svg"
+                alt="лайк"
+              />
+            </a>
+            <span class="card__like-text">1350</span>
+          </div>
+        </div>
+        <div class="card__wrapper">
+          <a class="card__like-link" href="#">
+            <picture>
+              <source
+                srcset="
+                  ./img/card-photo-2-desktop.png    1x,
+                  ./img/card-photo-2-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/card-photo-2-tablet.png 1x,
+                  ./img/card-photo-2-mobile.png
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                srcset="./img/card-photo-2-mobile@2x.png"
+                class="card__photo"
+                src="./img/card-photo-2-tablet@2x.png"
+                alt="растительность"
+              />
+            </picture>
+          </a>
+          <h2 class="card__title">Местная растительность</h2>
+          <p class="card__descriptions">Автор фото: Сергей</p>
+          <div class="card__like-counter">
+            <a class="card__like-link" href="#">
+              <img
+                srcset=""
+                class="card__like-image"
+                src="./img/like-icon.svg"
+                alt="лайк"
+              />
+            </a>
+            <span class="card__like-text">143</span>
+          </div>
+        </div>
+        <div class="card__wrapper">
+          <a class="card__like-link" href="#">
+            <picture>
+              <source
+                srcset="
+                  ./img/card-photo-3-desktop.png    1x,
+                  ./img/card-photo-3-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/card-photo-3-tablet.png    1x,
+                  ./img/card-photo-3-tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                srcset="./img/card-photo-3-mobile@2x.png"
+                class="card__photo"
+                src="./img/card-photo-3-mobile.png"
+                alt="дорога"
+              />
+            </picture>
+          </a>
+          <h2 class="card__title">Дорога на север</h2>
+          <p class="card__descriptions">Автор фото: Петр</p>
+          <div class="card__like-counter">
+            <a class="card__like-link" href="#">
+              <img
+                class="card__like-image"
+                src="./img/like-icon.svg"
+                alt="лайк"
+              />
+            </a>
+            <span class="card__like-text">96</span>
+          </div>
+        </div>
+        <div class="card__wrapper">
+          <a class="card__like-link" href="#">
+            <picture>
+              <source
+                srcset="
+                  ./img/photo-4-desktop.png    1x,
+                  ./img/photo-4-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/photo-4-tablet@png    1x,
+                  ./img/photo-4-tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                srcset="./img/photo-4-mobile@2x.png"
+                class="card__photo"
+                src="./img/photo-4-mobile.png"
+                alt="мост-дьявола"
+              />
+            </picture>
+          </a>
+          <h2 class="card__title">Мост дьявола</h2>
+          <p class="card__descriptions">Автор фото: Антон</p>
+          <div class="card__like-counter">
+            <a class="card__like-link" href="#">
+              <img
+                class="card__like-image"
+                src="./img/like-icon.svg"
+                alt="лайк"
+              />
+            </a>
+            <span class="card__like-text">254</span>
+          </div>
+        </div>
+      </section>
       <section class="container">
         <div class="container__wrapper">
           <h2 class="container__title">Все еще сомневаетесь?</h2>
@@ -172,7 +216,26 @@
             подорожали в очередной раз!
           </p>
         </div>
-        <img class="container__video" src="./img/group-1.png" alt=" видео" />
+        <picture>
+          <source
+            srcset="
+              ./img/group-1-desktop.png    1x,
+              ./img/group-1-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./img/group-1-tablet.png 1x, ./img/group-1-tablet@2x.png"
+            media="(min-width: 768px)"
+          />
+
+          <img
+            srcset="./img/group-1-mobile@2x.png"
+            class="container__video"
+            src="./img/group-1-mobile.png"
+            alt=" видео"
+          />
+        </picture>
       </section>
     </main>
     <footer class="footer">

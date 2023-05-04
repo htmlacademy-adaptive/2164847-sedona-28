@@ -44,7 +44,9 @@
 
 .realtown__image {
   width: 100%;
+  height: 260px;
   object-fit: cover;
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/picture@2x.png");
   }
@@ -60,7 +62,9 @@
 
   .realtown__image {
     width: 100%;
+    height: 256px;
     object-fit: cover;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/picture-tablet@2x.png");
     }
