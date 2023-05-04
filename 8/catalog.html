@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <base href="https://htmlacademy-adaptive.github.io/2164847-sedona-28/8/">
+</head>
+  <body>
+    <div class="header__wrapper">
+      <header class="header header--closed">
+        <a class="header__logo" href="/">
+          <img src="./img/logo.svg" alt="логотип" />
+        </a>
+        <ul class="header__list header__list">
+          <li class="header__list-item">
+            <a href="/" class="header__item-link"> главная </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="catalog.html"> фото и видео </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="form.html"> Форма отзыва </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__item-link" href="#"> HTML ACADEMY </a>
+          </li>
+        </ul>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </header>
+    </div>
+    <main>
+      <div class="promo">
+        <img
+          class="promo__image"
+          src="./img/catalog-promo.svg"
+          alt="каталог-фото"
+        />
+        <section class="block">
+          <h2 class="block__title">Фото и видео</h2>
+          <p class="block__slogan">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут
+            вам забыть о политике и экономике.
+          </p>
+        </section>
+        <section class="card">
+          <div class="card__wrapper card__wrapper--full">
+            <a class="card__like-link" href="#">
+              <picture>
+                <source
+                  srcset="
+                    ./img/card__photo-1-desktop.png    1x,
+                    ./img/card__photo-1-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/card__photo-tablet1.png    1x,
+                    ./img/card__photo-tablet1@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  srcset="./img/card__photo-1-mobile@2x.png.png 2x"
+                  class="card__photo"
+                  src="./img/card__photo-1-mobile.png"
+                  alt="фото-просторы"
+                />
+              </picture>
+            </a>
+            <h2 class="card__title">неродные просторы</h2>
+            <p class="card__descriptions">Автор фото: Борис</p>
+            <div class="card__like-counter">
+              <a class="card__like-link" href="#">
+                <img
+                  class="card__like-image"
+                  src="./img/like-icon.svg"
+                  alt="лайк"
+                />
+              </a>
+              <span class="card__like-text">1350</span>
+            </div>
+          </div>
+          <div class="card__wrapper">
+            <a class="card__like-link" href="#">
+              <picture>
+                <source
+                srcset="">
+                <source
+                 srcset="">
+                <img
+                srcset=""
+                  class="card__photo"
+                  src="./img/photo-2.png"
+                  alt="растительность"
+                />
+              </picture>
+            </a>
+            <h2 class="card__title">Местная растительность</h2>
+            <p class="card__descriptions">Автор фото: Сергей</p>
+            <div class="card__like-counter">
+              <a class="card__like-link" href="#">
+                <picture>
+                  <source srcset="" />
+                  <source srcset="" />
+
+                  <img
+                    srcset=""
+                    class="card__like-image"
+                    src="./img/like-icon.svg"
+                    alt="лайк"
+                  />
+                </picture>
+              </a>
+              <span class="card__like-text">143</span>
+            </div>
+          </div>
+          <div class="card__wrapper">
+            <a class="card__like-link" href="#">
+              <img class="card__photo" src="./img/photo-3.png" alt="дорога" />
+            </a>
+            <h2 class="card__title">Дорога на север</h2>
+            <p class="card__descriptions">Автор фото: Петр</p>
+            <div class="card__like-counter">
+              <a class="card__like-link" href="#">
+                <img
+                  class="card__like-image"
+                  src="./img/like-icon.svg"
+                  alt="лайк"
+                />
+              </a>
+              <span class="card__like-text">96</span>
+            </div>
+          </div>
+          <div class="card__wrapper">
+            <a class="card__like-link" href="#">
+              <picture>
+                <source srcset="" />
+                <source srcset="" />
+                <img
+                  class="card__photo"
+                  src="./img/photo-4.png"
+                  alt="мост-дьявола"
+                />
+              </picture>
+            </a>
+            <h2 class="card__title">Мост дьявола</h2>
+            <p class="card__descriptions">Автор фото: Антон</p>
+            <div class="card__like-counter">
+              <a class="card__like-link" href="#">
+                <img
+                  class="card__like-image"
+                  src="./img/like-icon.svg"
+                  alt="лайк"
+                />
+              </a>
+              <span class="card__like-text">254</span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="container">
+        <div class="container__wrapper">
+          <h2 class="container__title">Все еще сомневаетесь?</h2>
+          <p class="container__slogan">
+            Смотрите видеопрезентацию и скорее за билетами, пока они не
+            подорожали в очередной раз!
+          </p>
+        </div>
+        <img class="container__video" src="./img/group-1.png" alt=" видео" />
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">#VISITSEDONA</div>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vkontakte" href="/">
+            <img src="./img/social-vk.svg" alt="вк" />
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="/">
+            <img src="./img/social-telegram.svg" alt="телеграмм" />
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="/">
+            <img src="./img/youtube.svg" alt="ютуб" />
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a
+          class="copyright__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
+          <img
+            class="footer__logo-footer"
+            src="./img/logo-footer.svg"
+            alt="лого-футер"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
