@@ -48,13 +48,31 @@
         </section>
         <section class="card">
           <div class="card__wrapper card__wrapper--full">
-              <a class="card__like-link" href="#">
+            <a class="card__like-link" href="#">
+              <picture>
+                <source
+                  srcset="
+                    ./img/card__photo-1-desktop.png    1x,
+                    ./img/card__photo-1-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/card__photo-tablet1.png    1x,
+                    ./img/card__photo-tablet1@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
                 <img
+                  srcset="./img/card__photo-1-mobile@2x.png.png 2x"
                   class="card__photo"
-                  src="./img/photo-1.png"
+                  src="./img/card__photo-1-mobile.png"
                   alt="фото-просторы"
                 />
-              </a>
+              </picture>
+            </a>
             <h2 class="card__title">неродные просторы</h2>
             <p class="card__descriptions">Автор фото: Борис</p>
             <div class="card__like-counter">
@@ -70,21 +88,34 @@
           </div>
           <div class="card__wrapper">
             <a class="card__like-link" href="#">
-              <img
-                class="card__photo"
-                src="./img/photo-2.png"
-                alt="растительность"
-              />
+              <picture>
+                <source
+                srcset="">
+                <source
+                 srcset="">
+                <img
+                srcset=""
+                  class="card__photo"
+                  src="./img/photo-2.png"
+                  alt="растительность"
+                />
+              </picture>
             </a>
             <h2 class="card__title">Местная растительность</h2>
             <p class="card__descriptions">Автор фото: Сергей</p>
             <div class="card__like-counter">
               <a class="card__like-link" href="#">
-                <img
-                  class="card__like-image"
-                  src="./img/like-icon.svg"
-                  alt="лайк"
-                />
+                <picture>
+                  <source srcset="" />
+                  <source srcset="" />
+
+                  <img
+                    srcset=""
+                    class="card__like-image"
+                    src="./img/like-icon.svg"
+                    alt="лайк"
+                  />
+                </picture>
               </a>
               <span class="card__like-text">143</span>
             </div>
@@ -108,11 +139,15 @@
           </div>
           <div class="card__wrapper">
             <a class="card__like-link" href="#">
-              <img
-                class="card__photo"
-                src="./img/photo-4.png"
-                alt="мост-дьявола"
-              />
+              <picture>
+                <source srcset="" />
+                <source srcset="" />
+                <img
+                  class="card__photo"
+                  src="./img/photo-4.png"
+                  alt="мост-дьявола"
+                />
+              </picture>
             </a>
             <h2 class="card__title">Мост дьявола</h2>
             <p class="card__descriptions">Автор фото: Антон</p>

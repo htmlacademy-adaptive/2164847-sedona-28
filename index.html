@@ -53,7 +53,26 @@
         </div>
         <div class="realtown-house">
           <picture>
-            <img class="realtown__image" src="./img/picture.png" alt="Домик" />
+            <source
+              srcset="
+                ./img/photo-city-desktop@1x.png 1x,
+                ./img/photo-city-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./img/photo-city-tablet@1x.png 1x,
+                ./img/photo-city-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              srcset="./img/picture-mobile@2x.png 2x"
+              class="realtown__image"
+              src="./img/picture.png"
+              alt="Домик"
+            />
           </picture>
         </div>
       </section>
@@ -103,7 +122,22 @@
       <section class="advantages">
         <div class="advantages__picture">
           <picture>
+            <source
+              srcset="
+                ./img/photo-bridge-desktop@.png 1x,
+                ./img/photo-bridge-desktop@@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./img/photo-bridge-tablet@.png   1x,
+                ./img/photo-bridge-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
             <img
+              srcset="./img/photo-bridge-mobile@2x.png 2x"
               class="advantages__picture-img"
               src="./img/photo-bridge.png"
               alt="фото-мост"
@@ -156,11 +190,22 @@
           <a class="search__button" href="#">Найти Гостиницу</a>
         </div>
         <div>
-          <img
-            class="search__button__map"
-            src="./img/map-mobile.png"
-            alt="карта"
-          />
+          <picture>
+            <source
+              srcset="./img/map-desktop.png 1x, ./img/map-desktop@2x.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="./img/map-tablet.png 1x, ./img/map-tablet@2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <img
+              srcset="./img/map-mobile.@2x.png 2x"
+              class="search__button__map"
+              src="./img/map-mobile.png"
+              alt="карта"
+            />
+          </picture>
         </div>
       </section>
     </main>

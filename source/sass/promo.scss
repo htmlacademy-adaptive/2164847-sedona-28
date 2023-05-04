@@ -5,27 +5,17 @@
   width: 100%;
   background: url("../img/promo-background-m.png") no-repeat center center;
   background-size: cover;
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/mobiile-intro@2x.png");
-  }
 }
 
 @media (min-width: $tablet-width) {
   .promo {
     background-image: url("../img/tablet-intro.png");
     height: 518px;
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tablet-intro@2x.png");
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo {
-    background-image: url("../img/desktop-intro.png");
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/desktop-intro@2x.png");
-    }
   }
 
+  @media (min-width: $desktop-width) {
+    .promo {
+      background-image: url("../img/desktop-intro.png");
+    }
+  }
 }
