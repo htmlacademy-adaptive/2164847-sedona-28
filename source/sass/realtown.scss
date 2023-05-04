@@ -45,6 +45,9 @@
 .realtown__image {
   width: 100%;
   object-fit: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/picture@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -53,5 +56,21 @@
     grid-template-columns: 1fr 2fr;
     height: 256px;
     overflow: hidden;
+  }
+
+  .realtown__image {
+    width: 100%;
+    object-fit: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/picture-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .realtown__image {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-city-desktop@2x.pngs");
+    }
   }
 }

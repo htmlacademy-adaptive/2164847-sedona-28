@@ -6,6 +6,12 @@
   grid-template-columns: 1fr;
 }
 
+.advantages__picture-img {
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-bridge@2x.png");
+  }
+}
+
 .advantages__title {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -50,5 +56,19 @@
     width: 100%;
     object-fit: cover;
     height: 256px;
+  }
+
+  .advantages__picture-img {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-bridge-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__picture-img {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-bridge-desktop@2x.png");
+    }
   }
 }

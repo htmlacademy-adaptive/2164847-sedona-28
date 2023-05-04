@@ -1,4 +1,31 @@
-.promo__image {
+@import "global/variables.scss";
+
+.promo {
+  height: 389px;
   width: 100%;
-  object-fit: cover;
+  background: url("../img/promo-background-m.png") no-repeat center center;
+  background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobiile-intro@2x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/tablet-intro.png");
+    height: 518px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-intro@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/desktop-intro.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop-intro@2x.png");
+    }
+  }
+
 }
