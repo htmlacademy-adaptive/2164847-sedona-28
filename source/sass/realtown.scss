@@ -46,10 +46,6 @@
   width: 100%;
   height: 260px;
   object-fit: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/picture@2x.png");
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -64,17 +60,5 @@
     width: 100%;
     height: 256px;
     object-fit: cover;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/picture-tablet@2x.png");
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .realtown__image {
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/photo-city-desktop@2x.pngs");
-    }
   }
 }
