@@ -42,6 +42,10 @@
   height: 280px;
   width: 100%;
   object-fit: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-1-mobile@2x.png");
+  }
 }
 
 .card__wrapper {
@@ -52,6 +56,10 @@
 @media (min-width: $tablet-width) {
   .card__photo {
     height: 267px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-1-tablet@2x.png");
+    }
   }
 
   .card {
@@ -67,6 +75,12 @@
 @media (min-width: $desktop-width) {
   .card {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card__photo {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-1-desktop@2x.png");
+    }
   }
 
   .card__wrapper--full {
