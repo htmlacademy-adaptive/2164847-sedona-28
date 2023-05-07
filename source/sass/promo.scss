@@ -14,6 +14,20 @@
     background-image: url("../img/promo-background-m@2x.jpg");
   }
 }
+
+.promo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: url("../img/catalog-after-mobile.svg") no-repeat bottom center;
+  background-size: contain;
+}
+
 .promo.promo--inside::after {
   content: "";
   display: block;

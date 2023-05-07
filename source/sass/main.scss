@@ -1,0 +1,7 @@
+@import "global/variables.scss";
+
+@media (min-width: $tablet-width) {
+  .main {
+    padding-top: 0;
+  }
+}
