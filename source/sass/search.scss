@@ -1,7 +1,7 @@
 @import "global/variables.scss";
 
 .search {
-  padding-top: 46px;
+  padding-top: 38px;
 }
 
 .search__wrapper {
@@ -57,9 +57,30 @@
 }
 
 @media (min-width: $tablet-width) {
+  .search {
+    padding-top: 60px;
+  }
+
   .search__button {
-    max-width: 458px;
     margin-bottom: 55px;
+    padding: 16px 135px 17px 135px;
+    margin-top: 4px;
+  }
+
+  .search__title {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .search__paragraph {
+    margin-top: 32px;
+    margin-bottom: 39px;
+    max-width: 500px;
   }
 }
 
@@ -67,6 +88,29 @@
   .search__button {
     margin-bottom: 66px;
     max-width: 458px;
-    margin-top: 32px;
+    margin-top: 8px;
+  }
+
+  .search__title {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .search__paragraph {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .search__wrapper {
+    max-width: 462px;
+    margin: 0 auto;
   }
 }

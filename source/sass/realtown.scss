@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: -5px;
 }
 
 .realtown__title {
@@ -63,5 +64,29 @@
     width: 100%;
     height: 256px;
     object-fit: cover;
+  }
+
+  .realtown__title {
+    font-size: 21px;
+    max-width: 190px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 53px;
+  }
+
+  .realtown__number {
+    margin-top: 13px;
+  }
+
+  .realtown__description {
+    max-width: 190px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 23px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .realtown__description {
+    max-width: 275px;
   }
 }

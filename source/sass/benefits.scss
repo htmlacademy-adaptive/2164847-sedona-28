@@ -14,7 +14,7 @@
 .benefits__item {
   list-style-type: none;
 
-  &+& {
+  & + & {
     margin-top: 28px;
   }
 }
@@ -41,23 +41,63 @@
   margin: 9px 0 0;
   text-transform: uppercase;
   max-width: 236px;
-
-}
-
-.benefits__picture {
-  height: 40px;
-  width: 40px;
-  object-fit: contain;
 }
 
 .benefits__item-slogan {
   display: flex;
   align-items: center;
 }
-
+.benefits__picture {
+  height: 40px;
+  width: 40px;
+}
 @media (min-width: $tablet-width) {
   .benefits__list {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .benefits__description.benefits__description--house {
+    max-width: 168px;
+  }
+
+  .benefits__description.benefits__description--burger {
+    max-width: 168px;
+  }
+
+  .benefits__list {
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .benefits__picture--house {
+    margin-top: 11px;
+  }
+
+  .benefits__picture--burger {
+    margin-top: -18px;
+  }
+
+  .benefits__picture {
+    width: 80px;
+    height: 80px;
+  }
+
+  .benefits__picture--gift {
+    margin-top: -14px;
+  }
+
+  .benefits__title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-right: 8px;
+    margin-top: 27px;
   }
 
   .benefits__item-slogan {
@@ -66,8 +106,10 @@
 
   .benefits__description {
     text-align: center;
-    max-width: 190px;
+    max-width: 165px;
     display: block;
+    margin-top: 25px;
+    padding-left: 0;
   }
 
   .benefits__item {
@@ -75,5 +117,51 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .benefits__picture--burger + .benefits__title {
+    margin-top: 18px;
+  }
+
+  .benefits__picture--gift + .benefits__title {
+    margin-top: 10px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .benefits__picture--house {
+    margin-top: 22px;
+  }
+
+  .benefits__picture--gift + .benefits__title {
+    margin-top: 33px;
+  }
+
+  .benefits__picture--gift {
+    margin-top: -6px;
+  }
+
+  .benefits__description {
+    max-width: 195px;
+    margin-top: 16px;
+  }
+
+  .benefits__description.benefits__description--house {
+    max-width: 263px;
+  }
+
+  .benefits__description.benefits__description--burger {
+    max-width: 275px;
+    margin-top: 38px;
+  }
+
+  .benefits__picture--burger {
+    position: relative;
+    top: 11px;
+  }
+
+  .benefits__picture--burger+.benefits__title {
+    position: relative;
+    top: 13px;
+
   }
 }

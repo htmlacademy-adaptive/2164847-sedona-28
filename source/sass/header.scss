@@ -130,8 +130,16 @@ body {
     position: static;
   }
 
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
   .header--closed .header__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .header__list {
@@ -143,9 +151,13 @@ body {
 
   .header__item-link {
     color: #000000;
+    font-size: 14px;
   }
 
   .header__toggle {
     display: none;
   }
 }
+// @media (min-width: $desktop-width) {
+//   padding-left: 110px;
+// }

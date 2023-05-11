@@ -45,9 +45,15 @@
   .promo.promo--inside::after {
     background-image: url("../img/catalog-after-pablet.svg");
   }
+
+  .promo::after {
+    background-image: url(../img/index-tablet-after.svg);
+  }
+
   .promo {
     background-image: url("../img/promo-background-t.jpg");
     height: 518px;
+    z-index: -1;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-background-t@2x.jpg");
@@ -59,6 +65,11 @@
   .promo.promo--inside::after {
     background-image: url("../img/catalog-after-desktop.svg");
   }
+
+  .promo::after {
+    background-image: url(../img/index-drsktop-after.svg);
+  }
+
   .promo {
     background-image: url("../img/promo-background-d.jpg");
 
