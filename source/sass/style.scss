@@ -18,7 +18,8 @@
 @import "search.scss";
 @import "copyright.scss";
 @import "feedback-form";
-
+@import "main.scss";
+@import "global/variables.scss";
 
 .visually-hidden {
   position: absolute;
@@ -42,4 +43,10 @@ p {
 body {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .tablet-br {
+    display: block;
+  }
 }

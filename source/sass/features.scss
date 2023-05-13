@@ -3,6 +3,22 @@
 .features {
   padding-left: 18px;
   padding-right: 18px;
+  position: relative;
+  padding-bottom: 45px;
+}
+
+.features::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  object-fit: contain;
+  background: url("../img/features-after-mobile.svg") no-repeat top center;
+  background-size: contain;
+  background-color: #81b3d2;
 }
 
 .features__title {
@@ -19,6 +35,9 @@
   text-transform: uppercase;
   margin-bottom: 35px;
   margin-top: 32px;
+  max-width: 271px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .features__description {
@@ -41,10 +60,27 @@
     font-size: 21px;
     padding-right: 124px;
     padding-left: 124px;
+    max-width: 465px;
+    margin-top: 50px;
+  }
+
+  .features::after {
+    display: none;
   }
 
   .features__description {
     padding-left: 124px;
     padding-right: 124px;
+    margin-top: -7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__title {
+    margin-top: 60px;
+  }
+
+  .features {
+    padding-bottom: 36px;
   }
 }

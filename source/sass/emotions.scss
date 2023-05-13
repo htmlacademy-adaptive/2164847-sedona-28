@@ -1,3 +1,5 @@
+@import "global/variables.scss";
+
 .emotions__title {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -8,8 +10,27 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-top: 24px;
+  margin-top: 49px;
 }
+
+.emotions__textarea {
+  resize: none;
+  display: block;
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+  padding: 16px;
+}
+
+.emotions__textarea::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 
 .emotions__item {
   font-family: "PT Sans", sans-serif;
@@ -18,6 +39,7 @@
   font-size: 12px;
   line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
+  margin-bottom: 22px;
 }
 
 .emotions__emotions {
@@ -31,6 +53,85 @@
 }
 
 .emotions__button {
+  max-width: 324px;
   display: block;
   width: 100%;
+  background: #81b3d2;
+  outline: none;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 16px 30px;
+  margin-top: 21px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .emotions {
+    margin-bottom: 12px;
+  }
+
+  .emotions__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 46px;
+    padding: 0 40px;
+  }
+
+  .emotions__title {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-top: 26px;
+    margin-bottom: 31px;
+  }
+
+  .emotions__textarea {
+    height: 130px;
+    margin-left: 41px;
+    margin-right: 41px;
+    padding: 14px;
+  }
+
+  .emotions__button {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .emotions__item {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .emotions__title {
+    margin-top: 70px;
+  }
+
+  .emotions__textarea {
+    margin: 0 auto;
+    width: 731px;
+  }
+
+  .emotions__wrapper {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
 }

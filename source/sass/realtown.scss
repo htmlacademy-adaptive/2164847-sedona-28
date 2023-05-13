@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: -5px;
 }
 
 .realtown__title {
@@ -28,7 +29,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 11px;
-  margin-bottom: 17px;
+  margin-bottom: 12px;
 }
 
 .realtown__description {
@@ -40,12 +41,15 @@
   line-height: 21px;
   color: #ffffff;
   padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 262px;
 }
 
 .realtown__image {
   width: 100%;
   height: 260px;
   object-fit: cover;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,5 +64,30 @@
     width: 100%;
     height: 256px;
     object-fit: cover;
+  }
+
+  .realtown__title {
+    font-size: 21px;
+    max-width: 190px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 53px;
+  }
+
+  .realtown__number {
+    margin-top: 13px;
+  }
+
+  .realtown__description {
+    max-width: 190px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .realtown__description {
+    max-width: 275px;
   }
 }

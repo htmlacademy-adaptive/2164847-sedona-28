@@ -17,6 +17,10 @@
   padding-top: 37px;
 }
 
+.advantages__picture-img {
+  display: block;
+}
+
 .advantages__number {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -44,11 +48,71 @@
 @media (min-width: $tablet-width) {
   .advantages {
     grid-template-columns: 2fr 1fr;
+    margin-top: 58px;
+  }
+
+  .advantages__wrapper {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .advantages__picture {
+    grid-column: 1;
+    grid-row: 1;
   }
 
   .advantages__picture-img {
     width: 100%;
     object-fit: cover;
     height: 256px;
+  }
+
+  .advantages__title {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 150px;
+    margin: 0 auto;
+    padding-top: 52px;
+  }
+
+  .advantages__paragraph {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 190px;
+    margin: 0 auto;
+    margin-top: 26px;
+    padding-bottom: 0;
+  }
+
+  .advantages__number {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-top: 72px;
+  }
+
+  .advantages__paragraph {
+    max-width: 215px;
   }
 }

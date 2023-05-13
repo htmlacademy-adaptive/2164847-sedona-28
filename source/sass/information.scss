@@ -15,14 +15,14 @@
 
 .information__list__element {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 28px;
 }
 
 .information__title {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   color: #000000;
   text-align: center;
@@ -49,10 +49,65 @@
   color: #333333;
   text-align: center;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 256px;
 }
 
 @media (min-width: $tablet-width) {
   .information__list {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .information__title {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .information__paragraph--index {
+    max-width: 235px;
+    margin-top: 24px;
+  }
+
+  .information__paragraph--information {
+    max-width: 235px;
+    margin-top: 24px;
+  }
+
+  .information__paragraph--list {
+    margin-top: 24px;
+  }
+
+  .information__number {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .information__paragraph {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .information__list__element {
+    margin: 0 auto;
+    padding: 43px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .information__list__element {
+    padding: 51px 0 31px;
   }
 }
