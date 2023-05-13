@@ -12,6 +12,7 @@
   line-height: 26px;
   color: #000000;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .block__slogan {
@@ -22,12 +23,26 @@
   line-height: 21px;
   color: #333333;
   text-align: center;
+  text-transform: uppercase;
+  padding: 23px;
+  margin-top: 2px;
 }
 
 @media (min-width: $tablet-width) {
   .block__slogan {
-    max-width: 458px;
+    max-width: 442px;
     text-align: center;
     margin: 0 auto;
+    padding: 32px 25px;
+  }
+
+  .block__title {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-top: 67px;
   }
 }

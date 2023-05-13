@@ -15,6 +15,10 @@
   }
 }
 
+.promo__image {
+  margin-top: -16px;
+}
+
 .promo::after {
   content: "";
   display: block;
@@ -41,13 +45,17 @@
   background-size: contain;
 }
 
+.promo-catalog-img {
+  margin-top: -15px;
+}
+
 @media (min-width: $tablet-width) {
   .promo.promo--inside::after {
     background-image: url("../img/catalog-after-pablet.svg");
   }
 
   .promo::after {
-    background-image: url(../img/index-tablet-after.svg);
+    background-image: url("../img/index-tablet-after.svg");
   }
 
   .promo {
@@ -67,7 +75,7 @@
   }
 
   .promo::after {
-    background-image: url(../img/index-drsktop-after.svg);
+    background-image: url("../img/index-drsktop-after.svg");
   }
 
   .promo {

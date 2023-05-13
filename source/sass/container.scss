@@ -8,16 +8,25 @@
   line-height: 26px;
   color: #000000;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
 }
 
 .container__slogan {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   color: #000000;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .container__video {
@@ -25,10 +34,33 @@
   object-fit: cover;
 }
 
+.container__wrapper {
+  gap: 27px;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: $tablet-width) {
+  .container__wrapper--video {
+    padding: 60px 60px 40px 60px;
+  }
+
   .container__slogan {
     text-align: center;
     max-width: 445px;
     margin: 0 auto;
+  }
+
+  .container__title {
+    font-size: 30px;
+  }
+
+  .container__wrapper {
+    gap: 32px;
+  }
+
+  .container__video {
+    margin-top: 51px;
   }
 }

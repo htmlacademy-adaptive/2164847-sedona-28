@@ -137,9 +137,16 @@ body {
     transform: translateX(-50%);
   }
 
+  .header__list-items-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
   .header--closed .header__list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-direction: row;
+    gap: 153px;
   }
 
   .header__list {

@@ -47,13 +47,17 @@
   display: flex;
   align-items: center;
 }
+
 .benefits__picture {
   height: 40px;
   width: 40px;
 }
+
 @media (min-width: $tablet-width) {
   .benefits__list {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    padding: 0;
   }
 
   .benefits__description.benefits__description--house {
@@ -62,11 +66,6 @@
 
   .benefits__description.benefits__description--burger {
     max-width: 168px;
-  }
-
-  .benefits__list {
-    margin-top: 40px;
-    padding: 0;
   }
 
   .benefits__picture--house {
@@ -127,6 +126,7 @@
     margin-top: 10px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .benefits__picture--house {
     margin-top: 22px;
@@ -159,9 +159,8 @@
     top: 11px;
   }
 
-  .benefits__picture--burger+.benefits__title {
+  .benefits__picture--burger + .benefits__title {
     position: relative;
     top: 13px;
-
   }
 }
