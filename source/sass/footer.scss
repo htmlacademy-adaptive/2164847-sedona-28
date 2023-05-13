@@ -14,6 +14,7 @@
   line-height: 26px;
   color: #000000;
   text-align: center;
+  margin-top: 28px;
 }
 
 .footer__logo-footer {
@@ -42,6 +43,17 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 3px;
+  }
+
+  .footer__wrapper {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    text-align: center;
+    margin-top: 72px;
   }
 }
 

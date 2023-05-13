@@ -1,14 +1,17 @@
+@import "global/variables.scss";
+
 .stats__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 26px;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 24px;
   margin-top: 36px;
+  text-transform: uppercase;
 }
 
 .stats__intro {
@@ -19,4 +22,27 @@
   line-height: 21px;
   color: #333333;
   text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .stats__title {
+    margin-top: 65px;
+  }
+
+  .stats__intro {
+    margin: 0 auto;
+    max-width: 441px;
+    margin-top: -3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats__title {
+    margin-top: 116px;
+  }
+
+  .stats__intro {
+    margin-top: 31px;
+  }
 }

@@ -1,9 +1,5 @@
 @import "global/variables.scss";
 
-.impression__title {
-  margin-top: 70px;
-}
-
 .feedback-form__header {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -20,7 +16,7 @@
 .feedback-form {
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 68px;
+  margin-top: 51px;
 }
 
 .feedback-form__name {
@@ -60,7 +56,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 24px;
-  margin-top: 24px;
+  margin-top: 60px;
 }
 
 .feedback-form__radio-mark {
@@ -96,7 +92,7 @@
   position: relative;
 }
 
-.feedback-form__checkbox:checked + .feedback-form__checkbox-labels .feedback-form__checkbox-mark::before {
+.feedback-form__checkbox:checked+.feedback-form__checkbox-labels .feedback-form__checkbox-mark::before {
   content: url("../img/tick.svg");
   position: absolute;
   top: 50%;
@@ -115,7 +111,7 @@
   align-items: center;
 }
 
-.feedback-form__radio:checked + .feedback-form__radio-label .feedback-form__radio-mark::before {
+.feedback-form__radio:checked+.feedback-form__radio-label .feedback-form__radio-mark::before {
   content: "";
   display: block;
   width: 16px;
@@ -147,10 +143,36 @@
 }
 
 .feedback-form__field {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  position: relative;
 }
+
+.feedback-form__field--phone::after {
+
+  content: url(../img/fededback-phone.svg);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 58px;
+}
+
+.feedback-form__field--mail::after {
+
+  content: url(../img/feedback-mail.svg);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 58px;
+}
+
 
 .feedback-form__field:last-child {
   margin-bottom: 0;
@@ -167,6 +189,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+  margin-top: -3px;
 }
 
 .feedback-form__input {
@@ -175,60 +198,49 @@
   padding: 16px;
   background: #f2f2f2;
   border: none;
-}
-
-.emotions__button {
-  background: #81b3d2;
-  outline: none;
-  border: none;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 16px 30px;
-  margin-top: 56px;
-}
-
-.emotions__textarea {
-  display: block;
-  border: none;
-  outline: none;
-  background: #f2f2f2;
-  padding: 16px;
-}
-
-.emotions__textarea::placeholder {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
 }
 
-.emotions__item {
-  margin-bottom: 22px;
-}
 
 @media (min-width: $tablet-width) {
-  .emotions__button {
-    max-width: 324px;
+
+  .feedback-form__contacts {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 56px;
+    margin-bottom: 30px;
+  }
+
+  .feedback-form__header {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 55px;
+    margin-bottom: 32px;
   }
 
   .userdata {
-    padding-right: 50px;
+    padding-right: 28px;
+    padding-left: 38px;
     border-right: 1px solid #dbdbdb;
   }
 
   .contacts {
-    padding-left: 50px;
+    padding-left: 28px;
+    padding-right: 38px;
+  }
+
+  .feedback-form__row {
+    max-width: 575px;
+    margin: 0 auto;
+    column-gap: 12px;
   }
 
   .feedback-form__grid {
@@ -251,18 +263,46 @@
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
   }
+
+  .feedback-form__row--visiting {
+    max-width: 480px;
+    column-gap: 32px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .impression .feedback-form__row {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 
   .emotions__button {
     max-width: 384px;
   }
 
-  .visiting .feedback-form__row {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  .feedback-form__row {
+    display: flex;
+    max-width: 851px;
+    margin: 0 auto;
+    column-gap: 5px;
+    margin-top: 47px;
+  }
+
+  .feedback-form__header {
+    margin-top: 16px;
+  }
+
+  .userdata {
+    padding-left: 99px;
+    padding-right: 48px;
+  }
+
+  .feedback-form__contacts {
+    margin-top: 16px;
+  }
+
+  .contacts {
+    padding-left: 50px;
+    padding-right: 99px;
+  }
+
+  .feedback-form__row--visiting {
+    max-width: 871px;
   }
 }

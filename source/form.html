@@ -119,36 +119,40 @@
           <img src="./img/logo.svg" alt="логотип" />
         </a>
         <ul class="header__list header__list">
-          <li class="header__list-item">
-            <a href="/" class="header__item-link"> главная </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__item-link" href="catalog.html"> фото и видео </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__item-link" href="form.html"> Форма отзыва </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__item-link" href="#"> HTML ACADEMY </a>
-          </li>
+          <div class="header__list-items-wrapper">
+            <li class="header__list-item">
+              <a href="/" class="header__item-link"> главная </a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__item-link" href="catalog.html"> фото и видео </a>
+            </li>
+          </div>
+          <div class="header__list-items-wrapper">
+            <li class="header__list-item">
+              <a class="header__item-link" href="form.html"> Форма отзыва </a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__item-link" href="#"> HTML ACADEMY</a>
+            </li>
+          </div>
         </ul>
         <button class="header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </header>
     </div>
-    <main class="main-container">
+    <main class="main-container main">
       <section class="stats">
         <div class="promo promo--inside">
-          <img
-            class="promo__image"
-            src="./img/catalog-promo-mobile.svg"
-            alt="каталог-фото"
-          />
+          <picture>
+            <source srcset="./img/sedona-tablet-catalog.svg 1x" media="(min-width: 768px)" />
+            <source srcset="./img/sedona-desktop-catalog.svg" media="(min-width: 1200px)" />
+            <img src="./img/sedona-mobile.svg" class="promo-catalog-img" alt="" />
+          </picture>
         </div>
         <h2 class="stats__title">Оставьте свой отзыв</h2>
         <p class="stats__intro">
-          Помогите нашим отелям стать лучше!<br />
+          Помогите нашим отелям стать лучше!
           оставьте отзыв о них, а также о посещенных вами
           достопримечательностях
         </p>
@@ -162,19 +166,19 @@
                 <label class="feedback-form__label" for="username">
                   ИМЯ*:
                 </label>
-                <input class="feedback-form__input" type="text" id="username" />
+                <input class="feedback-form__input" placeholder="Введите имя" type="text" id="username" />
               </div>
               <div class="feedback-form__field">
                 <label class="feedback-form__label" for="surname">
                   ФАМИЛИЯ*:
                 </label>
-                <input class="feedback-form__input" type="text" id="surname" />
+                <input class="feedback-form__input" placeholder="Введите фамилию" type="text" id="surname" />
               </div>
               <div class="feedback-form__field">
                 <label class="feedback-form__label" for="patronymic">
                   Отчество:
                 </label>
-                <input
+                <input placeholder="Введите отчество"
                   class="feedback-form__input"
                   type="text"
                   id="patronymic"
@@ -184,21 +188,24 @@
 
             <div class="contacts">
               <h2 class="feedback-form__contacts">Контактная информация:</h2>
-              <div class="feedback-form__field">
-                <label class="feedback-form__label" for="telephone">
+              <div class="feedback-form__field feedback-form__field--phone">
+                <label class="feedback-form__label"  for="telephone">
                   Контактный телефон*:
                 </label>
-                <input
+                <input placeholder="Введите телефон"
                   class="feedback-form__input"
-                  type="text"
+                  type="tel"
+                  required
                   id="telephone"
                 />
               </div>
-              <div class="feedback-form__field">
+              <div class="feedback-form__field feedback-form__field--mail">
+                <div class="feedback-form__field ">
                 <label class="feedback-form__label" for="email">
                   Электронная почта*:
                 </label>
-                <input class="feedback-form__input" type="text" id="email" />
+                <input class="feedback-form__input" placeholder="Введите e-mail" type="email" id="email" required/>
+              </div>
               </div>
             </div>
 
@@ -246,7 +253,7 @@
 
             <div class="visiting">
               <h2 class="visiting__title">посещенные достопримечательности:</h2>
-              <div class="feedback-form__row">
+              <div class="feedback-form__row feedback-form__row--visiting">
                 <div class="form-field__checkbox">
                   <input
                     class="feedback-form__checkbox visually-hidden"
@@ -311,10 +318,12 @@
                   placeholder="Опишите подробно все свои восторги "
                 ></textarea>
               </div>
+              <div class="emotions__wrapper">
               <button type="submit" class="emotions__button">
                 ОТПРАВИТЬ ОТЗЫВ
               </button>
               <p class="emotions__item">* — обязательные поля</p>
+            </div>
             </div>
           </div>
         </form>

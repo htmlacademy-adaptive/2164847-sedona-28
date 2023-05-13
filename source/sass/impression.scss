@@ -1,3 +1,5 @@
+@import "global/variables.scss";
+
 .impression__title {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -8,6 +10,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 57px;
 }
 
 .impression__positive {
@@ -35,4 +38,23 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+
+  .impression__title {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 61px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .impression__title {
+    margin-top: 67px;
+  }
 }
