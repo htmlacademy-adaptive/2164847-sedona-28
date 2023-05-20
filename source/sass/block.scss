@@ -46,3 +46,9 @@
     margin-top: 67px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .block__title {
+    margin-top: 99px;
+  }
+}

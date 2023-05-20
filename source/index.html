@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.min.css" /> -->
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./img/favicons/apple.png" />
@@ -117,20 +118,23 @@
         <a class="header__logo" href="/">
           <img src="./img/logo.svg" alt="логотип" />
         </a>
-        <ul class="header__list header__list">
-          <li class="header__list-item">
-            <a href="/" class="header__item-link"> главная </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__item-link" href="catalog.html"> фото и видео </a>
-          </li>
-          <span></span>
-          <li class="header__list-item">
-            <a class="header__item-link" href="form.html"> Форма отзыва </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__item-link" href="#"> HTML ACADEMY </a>
-          </li>
+        <ul class="header__list">
+          <div class="header__list-items-wrapper">
+            <li class="header__list-item">
+              <a href="/" class="header__item-link"> главная </a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__item-link" href="catalog.html"> фото и видео </a>
+            </li>
+          </div>
+          <div class="header__list-items-wrapper">
+            <li class="header__list-item">
+              <a class="header__item-link" href="form.html"> Форма отзыва </a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__item-link" href="#"> HTML ACADEMY</a>
+            </li>
+          </div>
         </ul>
         <button class="header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>

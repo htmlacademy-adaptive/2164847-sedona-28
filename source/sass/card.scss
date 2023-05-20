@@ -127,6 +127,21 @@
 @media (min-width: $desktop-width) {
   .card {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card__wrapper--full {
+    .card__footer {
+      margin-top: -76px;
+      padding: 0 21px;
+    }
+
+    .card__title {
+      margin-top: 14px;
+    }
   }
 
   .card__photo {
@@ -137,5 +152,24 @@
 
   .card__wrapper--full {
     grid-column: span 3;
+    padding-top: 33px;
+  }
+
+  .card__footer {
+    margin-top: -76px;
+    padding: 0 25px;
+  }
+
+  .card__title {
+    color: #FFFFFF;
+    margin-top: 10px;
+  }
+
+  .card__descriptions {
+    color: #FFFFFF;
+  }
+
+  .card__photo--devils-cape {
+    height: 267px;
   }
 }
