@@ -4,7 +4,7 @@
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 26px;
   color: #000000;
   text-align: center;
@@ -27,6 +27,7 @@
 
 @media (min-width: $tablet-width) {
   .stats__title {
+    font-size: 30px;
     margin-top: 65px;
   }
 

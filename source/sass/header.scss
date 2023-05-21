@@ -34,7 +34,7 @@ body {
   padding-bottom: 12px;
   justify-content: center;
   display: flex;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  // box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .header__item-link {
@@ -49,6 +49,14 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+}
+
+.header__item-link:hover {
+  color: #81B3D2;
+}
+
+.header__item-link:active {
+  color: #000000;
 }
 
 .header__logo {
@@ -165,6 +173,17 @@ body {
     display: none;
   }
 }
-// @media (min-width: $desktop-width) {
-//   padding-left: 110px;
-// }
+
+@media (min-width: $desktop-width) {
+
+  // padding-left: 110px;
+
+  .header--closed .header__list {
+    gap: 241px;
+  }
+
+  .header__list {
+    position: relative;
+    z-index: 20;
+  }
+}

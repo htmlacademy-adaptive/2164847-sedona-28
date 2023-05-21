@@ -16,8 +16,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #81b3d2;
+  background: #81B3D2;
 }
+
+.socials__link:hover {
+  background: #669EC0;
+}
+
+
+.socials__link:active {
+  background: #5496BD;
+}
+
 
 .socials__item {
   list-style-type: none;
