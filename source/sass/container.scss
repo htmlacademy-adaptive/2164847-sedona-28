@@ -64,3 +64,10 @@
     margin-top: 51px;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .container__wrapper--video {
+    padding: 67px 200px 60px 200px;
+  }
+}

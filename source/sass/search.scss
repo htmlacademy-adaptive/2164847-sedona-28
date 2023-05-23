@@ -52,6 +52,19 @@
   text-transform: uppercase;
 }
 
+.search__button:hover {
+  background: #669EC0;
+}
+
+.search__button:active {
+  background: #5496BD;
+}
+
+.search__button:disabled {
+  background: #E5E5E5;
+}
+
+
 .search__button__map {
   width: 100%;
 }

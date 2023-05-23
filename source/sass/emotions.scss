@@ -39,7 +39,7 @@
   font-size: 12px;
   line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
-  margin-bottom: 22px;
+  margin-bottom: 50px;
 }
 
 .emotions__emotions {
@@ -71,12 +71,26 @@
   color: #ffffff;
   padding: 16px 30px;
   margin-top: 21px;
+  cursor: pointer;
+}
+
+.emotions__button:hover {
+  background:#669EC0;
+}
+
+.emotions__button:active {
+  background:#5496BD;
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.emotions__button:disabled {
+  background:#E5E5E5;
 }
 
 @media (min-width: $tablet-width) {
 
   .emotions {
-    margin-bottom: 12px;
+    margin-bottom: 70px;
   }
 
   .emotions__wrapper {
@@ -133,5 +147,9 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+  }
+
+  .emotions {
+    margin-bottom: 49px;
   }
 }

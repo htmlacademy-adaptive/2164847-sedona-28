@@ -1,0 +1,122 @@
+@import "global/variables.scss";
+
+.modal__background {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.modal__content {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 45px 41px 35px;
+  box-sizing: border-box;
+}
+
+.modal__content-title {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.modal__content-descrption {
+  margin-top: 26px;
+}
+
+.modal__content-descrption {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__content-button {
+  color: #FFFFFF;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 180px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #81B3D2;
+  margin: 0 auto;
+  border: none;
+  margin-top: 28px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .modal__content-title {
+    font-size: 21px;
+  }
+
+  .modal__content {
+    width: 400px;
+  }
+
+  .modal__content-button {
+    width: 100%;
+  }
+
+  .modal__content--review {
+    width: 640px;
+  }
+
+  .modal__content-title {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .modal__content--review .modal__footer {
+    padding: 44px 91px;
+    background: #F2F2F2;
+    margin-top: 29px;
+  }
+
+  .modal__content--review .modal__content-button {
+    margin-top: 0;
+  }
+
+  .modal__content--review.modal__content {
+    padding: 0;
+  }
+
+  .modal__content--review .modal__content-title {
+    max-width: 444px;
+    margin: 0 auto;
+    padding-top: 52px;
+  }
+
+  .modal__content--review .modal__content-descrption {
+    max-width: 444px;
+    margin: 0 auto;
+    margin-top: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {}
