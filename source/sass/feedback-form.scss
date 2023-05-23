@@ -71,16 +71,16 @@
 }
 
 .feedback-form__radio-mark:hover {
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 
 .feedback-form__radio-mark:active {
-  background: #D5D5D5;
+  background: #d5d5d5;
 }
 
 .feedback-form__radio-mark:active::before {
-  background: rgba(51, 51, 51, 0.3) !important;
+  background: rgba(51, 51, 51, 0.3);
 }
 
 .feedback-form__checkbox-label {
@@ -106,16 +106,19 @@
 }
 
 .feedback-form__checkbox-mark:hover {
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 
-.feedback-form__checkbox-mark :active {
-  background: #D5D5D5;
+.feedback-form__checkbox-mark:active  {
+  background: #d5d5d5;
 }
 
+.feedback-form__checkbox:focus + .feedback-form__checkbox-label .feedback-form__checkbox-mark {
+  background: #d5d5d5;
+}
 
-.feedback-form__checkbox:checked+.feedback-form__checkbox-label .feedback-form__checkbox-mark::before {
+.feedback-form__checkbox:checked + .feedback-form__checkbox-label .feedback-form__checkbox-mark::before {
   content: url("../img/tick.svg");
   position: absolute;
   top: 50%;
@@ -124,8 +127,8 @@
 }
 
 
-.feedback-form__checkbox:checked+.feedback-form__checkbox-label .feedback-form__checkbox-mark:active::before {
-  opacity: .3;
+.feedback-form__checkbox:checked + .feedback-form__checkbox-label .feedback-form__checkbox-mark:active::before {
+  opacity: 0.3;
 }
 
 .feedback-form__radio-label {
@@ -138,8 +141,10 @@
   display: flex;
   align-items: center;
 }
-
-.feedback-form__radio:checked+.feedback-form__radio-label .feedback-form__radio-mark::before {
+.feedback-form__radio:focus + .feedback-form__radio-label .feedback-form__radio-mark {
+  background: #d5d5d5;
+}
+.feedback-form__radio:checked + .feedback-form__radio-label .feedback-form__radio-mark::before {
   content: "";
   display: block;
   width: 16px;
@@ -184,8 +189,7 @@
 }
 
 .feedback-form__field--phone::after {
-
-  content: url(../img/fededback-phone.svg);
+  content: url("../img/fededback-phone.svg");
   position: absolute;
   right: 0;
   bottom: 0;
@@ -193,8 +197,7 @@
 }
 
 .feedback-form__field--mail::after {
-
-  content: url(../img/feedback-mail.svg);
+  content: url("../img/feedback-mail.svg");
   position: absolute;
   right: 0;
   bottom: 0;
@@ -225,22 +228,18 @@
   outline: none;
   padding: 12px;
   background: #f2f2f2;
-  border: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   border: 4px solid #f2f2f2;
-  transition: .3s;
-  font-family: 'PT Sans', sans-serif;
+  transition: 0.3s;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   color: #000000;
 }
 
 .feedback-form__input::placeholder {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -250,21 +249,20 @@
 
 
 .feedback-form__input:hover {
-  background: #E5E5E5;
-  border-color: #E5E5E5;
+  background: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 .feedback-form__input:active,
 .feedback-form__input:focus {
-  background: #FFFFFF;
-  border-color: #E5E5E5;
+  background: #ffffff;
+  border-color: #e5e5e5;
 }
 
 
 @media (min-width: $tablet-width) {
-
   .feedback-form__contacts {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
@@ -274,7 +272,7 @@
   }
 
   .feedback-form__header {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
@@ -292,12 +290,6 @@
   .contacts {
     padding-left: 28px;
     padding-right: 38px;
-  }
-
-  .feedback-form__row {
-    max-width: 575px;
-    margin: 0 auto;
-    column-gap: 12px;
   }
 
   .feedback-form__grid {
@@ -319,6 +311,9 @@
     display: grid;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
+    max-width: 575px;
+    margin: 0 auto;
+    column-gap: 12px;
   }
 
   .feedback-form__row--visiting {
@@ -328,7 +323,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .emotions__button {
     max-width: 384px;
   }

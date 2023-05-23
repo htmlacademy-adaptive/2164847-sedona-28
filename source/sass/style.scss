@@ -40,12 +40,15 @@ p {
   margin: 0;
   padding: 0;
 }
+
 a {
-  transition: .2s;
+  transition: 0.2s;
 }
+
 a:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
+
 body {
   max-width: 1200px;
   margin: 0 auto;

@@ -11,7 +11,6 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import { deleteSync } from 'del';
-import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
@@ -30,11 +29,7 @@ export const styles = (done) => {
 }
 
 export const html = (done) => {
-   gulp.src('source/*.html')
-   .pipe(htmlmin({
-    removeComments: true,
-    collapseWhitespace: true
-  }))
+  gulp.src('source/*.html')
   .pipe(gulp.dest('build'));
   done()
 }
@@ -153,4 +148,3 @@ export default gulp.series(
   server,
   watcher
 );
-

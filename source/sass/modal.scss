@@ -11,7 +11,7 @@
 
 .modal__content {
   width: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   position: fixed;
   top: 50%;
@@ -22,7 +22,7 @@
 }
 
 .modal__content-title {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -33,22 +33,19 @@
 }
 
 .modal__content-descrption {
-  margin-top: 26px;
-}
-
-.modal__content-descrption {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 26px;
 }
 
 .modal__content-button {
-  color: #FFFFFF;
-  font-family: 'PT Sans', sans-serif;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -60,7 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #81B3D2;
+  background: #81b3d2;
   margin: 0 auto;
   border: none;
   margin-top: 28px;
@@ -68,10 +65,6 @@
 
 
 @media (min-width: $tablet-width) {
-  .modal__content-title {
-    font-size: 21px;
-  }
-
   .modal__content {
     width: 400px;
   }
@@ -85,7 +78,7 @@
   }
 
   .modal__content-title {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -94,7 +87,7 @@
 
   .modal__content--review .modal__footer {
     padding: 44px 91px;
-    background: #F2F2F2;
+    background: #f2f2f2;
     margin-top: 29px;
   }
 
@@ -118,5 +111,3 @@
     margin-top: 26px;
   }
 }
-
-@media (min-width: $desktop-width) {}

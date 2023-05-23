@@ -52,7 +52,7 @@ body {
 }
 
 .header__item-link:hover {
-  color: #81B3D2;
+  color: #81b3d2;
 }
 
 .header__item-link:active {
@@ -140,6 +140,7 @@ body {
 
   .header__logo {
     position: absolute;
+    width: auto;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
@@ -159,9 +160,17 @@ body {
 
   .header__list {
     flex-direction: row;
-    justify-content: space-between;
     background: transparent;
     position: static;
+  }
+
+  .header__list-item {
+    width: 20%;
+    text-align: center;
+  }
+
+  .header__list-item:nth-child(3) {
+    margin-left: 20%;
   }
 
   .header__item-link {

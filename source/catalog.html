@@ -96,28 +96,24 @@
 
   </svg>
 
-  <div class="header__wrapper">
+  <div class="header">
     <header class="header header--closed">
       <a class="header__logo" href="/">
         <img src="./img/logo.svg" alt="логотип" />
       </a>
       <ul class="header__list">
-        <div class="header__list-items-wrapper">
           <li class="header__list-item">
             <a href="/" class="header__item-link"> главная </a>
           </li>
           <li class="header__list-item">
             <a class="header__item-link" href="catalog.html"> фото и видео </a>
           </li>
-        </div>
-        <div class="header__list-items-wrapper">
           <li class="header__list-item">
             <a class="header__item-link" href="form.html"> Форма отзыва </a>
           </li>
           <li class="header__list-item">
             <a class="header__item-link" href="#"> HTML ACADEMY</a>
           </li>
-        </div>
       </ul>
       <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -265,7 +261,7 @@
         </div>
       </div>
     </section>
-    <section class="container container__wrapper--video">
+    <section class="container container--video">
       <div class="container__wrapper">
         <h2 class="container__title">Все еще сомневаетесь?</h2>
         <p class="container__slogan">
@@ -278,7 +274,7 @@
               ./img/group-1-desktop.png    1x,
               ./img/group-1-desktop@2x.png 2x
             " media="(min-width: 1200px)" />
-        <source srcset="./img/group-1-tablet.png 1x, ./img/group-1-tablet@2x.png" media="(min-width: 768px)" />
+        <source srcset="./img/group-1-tablet.png 1x, ./img/group-1-tablet@2x.png 2x" media="(min-width: 768px)" />
 
         <img srcset="./img/group-1-mobile@2x.png" class="container__video" src="./img/group-1-mobile.png"
           alt=" видео" />
@@ -289,21 +285,21 @@
     <div class="footer__wrapper">#VISITSEDONA</div>
     <ul class="socials">
       <li class="socials__item">
-        <a class="socials__link socials__link--vkontakte" href="/">
+        <a aria-label="вконтакте" class="socials__link socials__link--vkontakte" href="/">
           <svg width="24" height="24">
             <use xlink:href="#icon-vkontakte">
           </svg>
         </a>
       </li>
       <li class="socials__item">
-        <a class="socials__link socials__link--telegram" href="/">
+        <a aria-label="телеграм" class="socials__link socials__link--telegram" href="/">
           <svg width="24" height="24">
             <use xlink:href="#icon-telegram">
           </svg>
         </a>
       </li>
       <li class="socials__item">
-        <a class="socials__link socials__link--youtube" href="/">
+        <a aria-label="ютуб" class="socials__link socials__link--youtube" href="/">
           <svg width="24" height="24">
             <use xlink:href="#icon-youtube">
           </svg>
@@ -312,7 +308,7 @@
     </ul>
     <div class="footer__copyright copyright">
       <span class="copyright__text">Разработано:</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a aria-label="htmlacademy" class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="footer__logo-footer" width="28" height="35">
           <use xlink:href="#icon-logo-footer">
         </svg>

@@ -67,10 +67,6 @@
 @media (min-width: $tablet-width) {
   .card__photo {
     height: 267px;
-
-    @media (min-resolution: 2dppx) {
-      // background-image: url("../img/photo-1-tablet@2x.png");
-    }
   }
 
   .card {
@@ -133,10 +129,16 @@
     padding-right: 0;
   }
 
+  .card__wrapper {
+    position: relative;
+  }
+
   .card__wrapper--full {
     .card__footer {
       margin-top: -76px;
       padding: 0 21px;
+      grid-column: span 3;
+      padding-top: 33px;
     }
 
     .card__title {
@@ -144,29 +146,22 @@
     }
   }
 
-  .card__photo {
-    @media (min-resolution: 2dppx) {
-      // background-image: url("../img/photo-1-desktop@2x.png");
-    }
-  }
-
-  .card__wrapper--full {
-    grid-column: span 3;
-    padding-top: 33px;
-  }
-
   .card__footer {
-    margin-top: -76px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
     padding: 0 25px;
   }
 
   .card__title {
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 10px;
   }
 
   .card__descriptions {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .card__photo--devils-cape {
