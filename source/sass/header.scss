@@ -6,6 +6,7 @@ body {
 }
 
 .header {
+  margin-bottom: -40px;
   background: transparent;
   position: relative;
   width: 100%;
@@ -70,9 +71,6 @@ body {
   height: 96px;
 }
 
-.header__wrapper {
-  margin-bottom: -39px;
-}
 
 .header__toggle {
   position: absolute;
@@ -100,8 +98,7 @@ body {
 
 .header--opened .header__toggle {
   top: 0;
-  right: auto;
-  left: 0;
+  right: 0;
 
   &::before,
   &::after {
@@ -133,6 +130,16 @@ body {
   display: none;
 }
 
+.header--nojs .header__list {
+  display: block;
+  position: static;
+}
+
+.header--nojs .header__toggle,
+.header--nojs .header__logo {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .header {
     position: static;
@@ -155,7 +162,7 @@ body {
   .header--closed .header__list {
     display: flex;
     flex-direction: row;
-    gap: 153px;
+    gap: 0;
   }
 
   .header__list {
@@ -184,13 +191,6 @@ body {
 }
 
 @media (min-width: $desktop-width) {
-
-  // padding-left: 110px;
-
-  .header--closed .header__list {
-    gap: 241px;
-  }
-
   .header__list {
     position: relative;
     z-index: 20;

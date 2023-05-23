@@ -110,7 +110,7 @@
 }
 
 
-.feedback-form__checkbox-mark:active  {
+.feedback-form__checkbox-mark:active {
   background: #d5d5d5;
 }
 
@@ -141,9 +141,11 @@
   display: flex;
   align-items: center;
 }
+
 .feedback-form__radio:focus + .feedback-form__radio-label .feedback-form__radio-mark {
   background: #d5d5d5;
 }
+
 .feedback-form__radio:checked + .feedback-form__radio-label .feedback-form__radio-mark::before {
   content: "";
   display: block;
