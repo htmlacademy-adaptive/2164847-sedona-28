@@ -13,13 +13,13 @@
   background: #eeeeee;
 }
 
-.information__list__element {
+.information__list-element {
   padding-top: 24px;
   padding-bottom: 28px;
 }
 
 .information__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -29,7 +29,7 @@
 }
 
 .information__number {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -41,7 +41,7 @@
 }
 
 .information__paragraph {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -60,7 +60,7 @@
   }
 
   .information__title {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
@@ -85,7 +85,7 @@
   }
 
   .information__number {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -93,21 +93,27 @@
   }
 
   .information__paragraph {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
   }
 
-  .information__list__element {
+  .information__list-element {
     margin: 0 auto;
     padding: 43px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .information__list__element {
-    padding: 51px 0 31px;
+  .information__list-element {
+    padding: 51px 0 55px;
+  }
+
+  .information__paragraph--index,
+  .information__paragraph--information,
+  .information__paragraph {
+    max-width: 315px;
   }
 }

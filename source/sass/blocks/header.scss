@@ -1,15 +1,15 @@
 @import "global/variables.scss";
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
+  margin-bottom: -40px;
   background: transparent;
   position: relative;
   width: 100%;
   z-index: 3;
+}
+
+.header--nojs {
+  margin-bottom: 0;
 }
 
 .header__list {
@@ -34,11 +34,10 @@ body {
   padding-bottom: 12px;
   justify-content: center;
   display: flex;
-  // box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .header__item-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -51,8 +50,8 @@ body {
   text-decoration: none;
 }
 
-.header__item-link:hover {
-  color: #81B3D2;
+.header__item-link:not(.header__item-link--current):hover {
+  color: #81b3d2;
 }
 
 .header__item-link:active {
@@ -70,9 +69,6 @@ body {
   height: 96px;
 }
 
-.header__wrapper {
-  margin-bottom: -39px;
-}
 
 .header__toggle {
   position: absolute;
@@ -100,8 +96,7 @@ body {
 
 .header--opened .header__toggle {
   top: 0;
-  right: auto;
-  left: 0;
+  right: 0;
 
   &::before,
   &::after {
@@ -133,6 +128,16 @@ body {
   display: none;
 }
 
+.header--nojs .header__list {
+  display: block;
+  position: static;
+}
+
+.header--nojs .header__toggle,
+.header--nojs .header__logo {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .header {
     position: static;
@@ -140,6 +145,7 @@ body {
 
   .header__logo {
     position: absolute;
+    width: auto;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
@@ -154,19 +160,31 @@ body {
   .header--closed .header__list {
     display: flex;
     flex-direction: row;
-    gap: 153px;
+    gap: 0;
   }
 
   .header__list {
     flex-direction: row;
-    justify-content: space-between;
     background: transparent;
     position: static;
+  }
+
+  .header__list-item {
+    width: 20%;
+    text-align: center;
+  }
+
+  .header__list-item:nth-child(3) {
+    margin-left: 20%;
   }
 
   .header__item-link {
     color: #000000;
     font-size: 14px;
+  }
+
+  .header__item-link--current {
+    color: #766357;
   }
 
   .header__toggle {
@@ -175,13 +193,6 @@ body {
 }
 
 @media (min-width: $desktop-width) {
-
-  // padding-left: 110px;
-
-  .header--closed .header__list {
-    gap: 241px;
-  }
-
   .header__list {
     position: relative;
     z-index: 20;

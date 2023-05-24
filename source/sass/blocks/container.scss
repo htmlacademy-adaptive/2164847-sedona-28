@@ -1,7 +1,7 @@
 @import "global/variables.scss";
 
 .container__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -19,7 +19,7 @@
 }
 
 .container__slogan {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -31,7 +31,10 @@
 
 .container__video {
   width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
   object-fit: cover;
+  display: block;
 }
 
 .container__wrapper {
@@ -62,12 +65,16 @@
 
   .container__video {
     margin-top: 51px;
+    max-width: 648px;
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .container__wrapper--video {
     padding: 67px 200px 60px 200px;
+  }
+
+  .container__video {
+    max-width: 800px;
   }
 }

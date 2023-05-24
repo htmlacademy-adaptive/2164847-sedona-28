@@ -1,0 +1,47 @@
+@import "../global/variables.scss";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  transition: 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+@media (min-width: $tablet-width) {
+  .tablet-br {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tablet-br--desktop-hidden {
+    display: none;
+  }
+}

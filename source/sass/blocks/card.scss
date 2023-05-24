@@ -8,7 +8,7 @@
 
 .card__title {
   margin-top: 10px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -18,7 +18,7 @@
 }
 
 .card__descriptions {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -28,7 +28,7 @@
 }
 
 .card__text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -37,7 +37,7 @@
 }
 
 .card__like-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -47,16 +47,14 @@
 
 .card__like-link {
   text-decoration: none;
+  color: #000000;
 }
 
 .card__photo {
+  display: block;
   height: 280px;
   width: 100%;
   object-fit: cover;
-
-  @media (min-resolution: 2dppx) {
-    // background-image: url("../img/photo-1-mobile@2x.png");
-  }
 }
 
 .card__wrapper {
@@ -67,10 +65,6 @@
 @media (min-width: $tablet-width) {
   .card__photo {
     height: 267px;
-
-    @media (min-resolution: 2dppx) {
-      // background-image: url("../img/photo-1-tablet@2x.png");
-    }
   }
 
   .card {
@@ -133,10 +127,19 @@
     padding-right: 0;
   }
 
+  .card__wrapper {
+    position: relative;
+    padding-top: 0;
+  }
+
   .card__wrapper--full {
+    grid-column: 1/-1;
+
     .card__footer {
       margin-top: -76px;
       padding: 0 21px;
+      grid-column: span 3;
+      padding-top: 33px;
     }
 
     .card__title {
@@ -144,32 +147,34 @@
     }
   }
 
-  .card__photo {
-    @media (min-resolution: 2dppx) {
-      // background-image: url("../img/photo-1-desktop@2x.png");
-    }
-  }
-
-  .card__wrapper--full {
-    grid-column: span 3;
-    padding-top: 33px;
-  }
-
   .card__footer {
-    margin-top: -76px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
     padding: 0 25px;
   }
 
   .card__title {
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 10px;
   }
 
+  .card__like-text {
+    color: #ffffff;
+  }
+
   .card__descriptions {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .card__photo--devils-cape {
     height: 267px;
+  }
+
+  .card__like-link {
+    color: #ffffff;
   }
 }

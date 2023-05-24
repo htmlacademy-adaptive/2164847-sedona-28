@@ -1,7 +1,7 @@
 @import "global/variables.scss";
 
 .emotions__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -16,14 +16,20 @@
 .emotions__textarea {
   resize: none;
   display: block;
-  border: none;
   outline: none;
+  padding: 12px;
   background: #f2f2f2;
-  padding: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border: 4px solid #f2f2f2;
+  transition: 0.3s;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
 }
 
 .emotions__textarea::placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -31,9 +37,20 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
+.emotions__textarea:hover {
+  background: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.emotions__textarea:active,
+.emotions__textarea:focus {
+  background: #ffffff;
+  border-color: #e5e5e5;
+}
+
 
 .emotions__item {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -43,7 +60,7 @@
 }
 
 .emotions__emotions {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -57,9 +74,8 @@
   display: block;
   width: 100%;
   background: #81b3d2;
-  outline: none;
   border: none;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -75,20 +91,19 @@
 }
 
 .emotions__button:hover {
-  background:#669EC0;
+  background: #669ec0;
 }
 
 .emotions__button:active {
-  background:#5496BD;
-  color:rgba(255, 255, 255, 0.3);
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .emotions__button:disabled {
-  background:#E5E5E5;
+  background: #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {
-
   .emotions {
     margin-bottom: 70px;
   }
@@ -102,7 +117,7 @@
   }
 
   .emotions__title {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;

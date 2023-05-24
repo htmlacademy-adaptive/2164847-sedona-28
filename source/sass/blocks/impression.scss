@@ -1,7 +1,7 @@
 @import "global/variables.scss";
 
 .impression__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -14,7 +14,7 @@
 }
 
 .impression__positive {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -23,7 +23,7 @@
 }
 
 .impression__negative {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -32,7 +32,7 @@
 }
 
 .impression__abstaining {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -41,9 +41,8 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .impression__title {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;

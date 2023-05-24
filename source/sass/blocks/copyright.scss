@@ -1,0 +1,36 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.copyright__text {
+  text-transform: uppercase;
+  margin-right: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding-top: 5px;
+  }
+}
+
+.copyright__text:hover {
+  color: #81b3d2;
+}
+
+.copyright__text:active {
+  color: #b3b3b3;
+}
