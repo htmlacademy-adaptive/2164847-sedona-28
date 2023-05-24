@@ -1,7 +1,7 @@
 @import "global/variables.scss";
 
 .visiting__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -14,7 +14,7 @@
 }
 
 .visiting__label {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -23,7 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .visiting__title {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;

@@ -8,7 +8,7 @@
 
 .card__title {
   margin-top: 10px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -18,7 +18,7 @@
 }
 
 .card__descriptions {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -28,7 +28,7 @@
 }
 
 .card__text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -37,7 +37,7 @@
 }
 
 .card__like-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -55,10 +55,6 @@
   height: 280px;
   width: 100%;
   object-fit: cover;
-
-  @media (min-resolution: 2dppx) {
-    // background-image: url("../img/photo-1-mobile@2x.png");
-  }
 }
 
 .card__wrapper {
@@ -133,6 +129,7 @@
 
   .card__wrapper {
     position: relative;
+    padding-top: 0;
   }
 
   .card__wrapper--full {

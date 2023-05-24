@@ -139,12 +139,12 @@
       </symbol>
     </svg>
     <header class="header header--nojs header--closed">
-      <a class="header__logo" href="/">
+      <a class="header__logo">
         <img src="./img/logo.svg" alt="логотип" width="185" height="96" />
       </a>
       <ul class="header__list">
         <li class="header__list-item">
-          <a href="/" class="header__item-link"> главная </a>
+          <a class="header__item-link header__item-link--current"> главная </a>
         </li>
         <li class="header__list-item">
           <a class="header__item-link" href="catalog.html"> фото и видео </a>
@@ -168,10 +168,16 @@
             media="(min-width: 1200px)"
           />
           <source
-            srcset="./img/text-tablet-index.svg "
+            srcset="./img/text-tablet-index.svg"
             media="(min-width: 768px)"
           />
-          <img  class="promo__picture" src="./img/text-index.svg" alt="седона" width="282" height="214" />
+          <img
+            class="promo__picture"
+            src="./img/text-index.svg"
+            alt="седона"
+            width="282"
+            height="214"
+          />
         </picture>
       </section>
       <section class="features">
@@ -331,32 +337,32 @@
       <div class="information-wrapper">
         <section class="information">
           <ul class="information__list">
-            <li class="information__list__element">
+            <li class="information__list-element">
               <h2 class="information__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
               <p class="information__number">— №3 —</p>
               <p class="information__paragraph information__paragraph--index">
                 Все интересные места находятся очень близко
               </p>
             </li>
-            <li class="information__list__element">
+            <li class="information__list-element">
               <h2 class="information__title">КРАСИВАЯ ДОРОГА</h2>
               <p class="information__number">— №4 —</p>
               <p
                 class="information__paragraph information__paragraph--information"
               >
                 ЕХАТЬ В СЕДОНУ ИЗ ЛАС-
-                <span class="tablet-br"></span>
+                <span class="tablet-br tablet-br--desktop-hidden"></span>
                 ВЕГАСА СОВСЕМ
-                <span class="tablet-br"></span>
-                НЕ СКУЧНО!
+                <span class="tablet-br tablet-br--desktop-hidden"></span>
+                НЕ&nbsp;СКУЧНО!
               </p>
             </li>
-            <li class="information__list__element">
+            <li class="information__list-element">
               <h2 class="information__title">МАЛО ТУРИСТОВ</h2>
               <p class="information__number">— №5 —</p>
               <p class="information__paragraph information__paragraph--list">
                 Большинство едет в гранд
-                <span class="tablet-br"></span>
+                <span class="tablet-br tablet-br--desktop-hidden"></span>
                 каньон и толпится там
               </p>
             </li>
@@ -373,7 +379,7 @@
           </p>
           <a class="search__button" href="#">Найти Гостиницу</a>
         </div>
-        <div>
+        <div class="search__map-wrapper">
           <picture>
             <source
               srcset="./img/map-desktop.png 1x, ./img/map-desktop@2x.png 2x"
@@ -385,11 +391,12 @@
             />
             <img
               srcset="./img/map-mobile.@2x.png 2x"
-              class="search__button__map"
+              class="search__map-img"
               src="./img/map-mobile.png"
               alt="карта"
             />
           </picture>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.181733457925!2d-111.83633810585404!3d34.85437145326823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1684951226472!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -139,30 +139,28 @@
         />
       </symbol>
     </svg>
-    <div class="header">
-      <header class="header header--closed">
-        <a class="header__logo" href="/">
-          <img src="./img/logo.svg" alt="логотип" />
-        </a>
-        <ul class="header__list">
-          <li class="header__list-item">
-            <a href="/" class="header__item-link"> главная </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__item-link" href="catalog.html"> фото и видео </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__item-link" href="form.html"> Форма отзыва </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__item-link" href="#"> HTML ACADEMY</a>
-          </li>
-        </ul>
-        <button class="header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </header>
-    </div>
+    <header class="header header--nojs header--closed">
+      <a class="header__logo" href="/">
+        <img src="./img/logo.svg" alt="логотип" width="185" height="96" />
+      </a>
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a href="/" class="header__item-link"> главная </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__item-link" href="catalog.html"> фото и видео </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__item-link header__item-link--current"> Форма отзыва </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__item-link" href="#"> HTML ACADEMY</a>
+        </li>
+      </ul>
+      <button class="header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </header>
     <main class="main-container main">
       <section class="stats">
         <div class="promo promo--inside">
@@ -171,14 +169,17 @@
               srcset="./img/sedona-desktop-catalog.svg"
               media="(min-width: 1200px)"
             />
-            <source s
+            <source
+              s
               srcset="./img/sedona-tablet-catalog.svg 1x"
               media="(min-width: 768px)"
             />
             <img
               src="./img/sedona-mobile.svg"
               class="promo-catalog-img"
-              alt=""
+              alt="седона."
+              width="229"
+              height="39"
             />
           </picture>
         </div>
@@ -202,6 +203,7 @@
                   placeholder="Введите имя"
                   type="text"
                   id="username"
+                  required
                 />
               </div>
               <div class="feedback-form__field">
@@ -213,6 +215,7 @@
                   placeholder="Введите фамилию"
                   type="text"
                   id="surname"
+                  required
                 />
               </div>
               <div class="feedback-form__field">
@@ -363,7 +366,9 @@
             <div class="emotions">
               <h2 class="emotions__title">Опишите свои эмоции:</h2>
               <div class="feedback-form__field">
-                <label class="emotions__label" for="emotions1"></label>
+                <label class="visually-hidden" for="emotions1"
+                  >Опишите свои эмоции.</label
+                >
                 <textarea
                   class="emotions__textarea"
                   name="emotions"

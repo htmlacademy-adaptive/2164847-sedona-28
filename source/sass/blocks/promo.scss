@@ -9,7 +9,7 @@
   background: url("../img/promo-background-m.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
-  border-color: #c4c4c4;
+  background-color: #41545f;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-background-m@2x.jpg");
@@ -79,11 +79,6 @@
   .promo.promo--inside::after {
     background-image: url("../img/catalog-after-desktop.svg");
   }
-
-  // .promo__picture {
-  //   width: 460px;
-  //   height: 350pxS;
-  // }
 
   .promo::after {
     background-image: url("../img/index-drsktop-after.svg");

@@ -1,16 +1,15 @@
 @import "global/variables.scss";
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   margin-bottom: -40px;
   background: transparent;
   position: relative;
   width: 100%;
   z-index: 3;
+}
+
+.header--nojs {
+  margin-bottom: 0;
 }
 
 .header__list {
@@ -35,11 +34,10 @@ body {
   padding-bottom: 12px;
   justify-content: center;
   display: flex;
-  // box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .header__item-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -52,7 +50,7 @@ body {
   text-decoration: none;
 }
 
-.header__item-link:hover {
+.header__item-link:not(.header__item-link--current):hover {
   color: #81b3d2;
 }
 
@@ -183,6 +181,10 @@ body {
   .header__item-link {
     color: #000000;
     font-size: 14px;
+  }
+
+  .header__item-link--current {
+    color: #766357;
   }
 
   .header__toggle {
