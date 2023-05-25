@@ -58,17 +58,19 @@
   color: #000000;
 }
 
-.header__logo {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 .header__logo img {
   width: 185px;
   height: 96px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 0 auto;
 }
 
+.header__logo img:hover {
+  opacity: 0.3;
+}
 
 .header__toggle {
   position: absolute;

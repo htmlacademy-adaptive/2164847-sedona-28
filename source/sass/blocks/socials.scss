@@ -24,7 +24,8 @@
 }
 
 
-.socials__link:active {
+.socials__link:active,
+.socials__link:focus {
   background: #5496bd;
 }
 

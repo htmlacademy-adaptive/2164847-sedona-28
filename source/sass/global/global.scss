@@ -19,28 +19,28 @@ p {
   padding: 0;
 }
 
-a {
-  transition: 0.2s;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
 body {
-  max-width: 1200px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 @media (min-width: $tablet-width) {
+  body {
+    max-width: $tablet-width;
+  }
+
   .tablet-br {
     display: block;
   }
 }
 
 @media (min-width: $desktop-width) {
+  body {
+    max-width: $desktop-width;
+  }
+
   .tablet-br--desktop-hidden {
     display: none;
   }
