@@ -38,7 +38,10 @@ const script = (done) => {
 
 const svg = (done) => {
   gulp
-    .src(["source/img/*.svg", "!source/img/icons/*.svg"])
+    .src([
+      "source/img/*.svg",
+      "!source/img/sprites/*.svg"
+    ])
     .pipe(svgo())
     .pipe(gulp.dest("build/img"));
   done();
@@ -81,7 +84,11 @@ export const createWebp = (done) => {
 const copy = (done) => {
   gulp
     .src(
-      ["source/fonts/*.{woff2,woff}", "source/*.ico", "source/*.webmanifest"],
+      [
+        "source/fonts/*.{woff2,woff}",
+        "source/*.ico",
+        "source/*.webmanifest",
+      ],
       {
         base: "source",
       }
@@ -89,6 +96,20 @@ const copy = (done) => {
     .pipe(gulp.dest("build"));
   done();
 };
+
+const copySprites = (done) => {
+  gulp
+  .src(
+    [
+      "source/img/sprites/*.svg",
+    ],
+    {
+      base: "source",
+    }
+  )
+  .pipe(gulp.dest("build"));
+done();
+}
 
 const clean = (done) => {
   deleteSync("build");
@@ -123,6 +144,7 @@ export const build = gulp.series(
   copy,
   html,
   optimzeImages,
+  copySprites,
   gulp.parallel(styles, script, svg, sprite, createWebp)
 );
 
@@ -132,6 +154,7 @@ export default gulp.series(
   copy,
   html,
   optimzeImages,
+  copySprites,
   gulp.parallel(styles, script, svg, sprite, createWebp),
   server,
   watcher
