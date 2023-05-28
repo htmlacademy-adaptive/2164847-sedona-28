@@ -10,7 +10,7 @@
   background-size: cover;
   position: relative;
   background-color: #41545f;
-  margin-top: 3px;
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-background-m@2x.jpg");
   }
@@ -50,6 +50,10 @@
   margin-top: -15px;
 }
 
+.promo__picture {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .promo-catalog-img {
     width: 457px;
@@ -63,6 +67,7 @@
   .promo__picture {
     width: 461px;
     height: 350px;
+    margin-top: -10px;
   }
 
   .promo::after {

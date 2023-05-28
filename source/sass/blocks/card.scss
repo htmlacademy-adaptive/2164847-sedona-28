@@ -7,7 +7,7 @@
 }
 
 .card__title {
-  margin-top: 14px;
+  margin: 14px 0 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -24,7 +24,7 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  margin-bottom: 12px;
+  margin: 0 0 12px;
 }
 
 .card__text {
@@ -129,6 +129,7 @@
 
   .card__wrapper--full .card__photo {
     margin-top: 32px;
+    height: 402px;
   }
 
   .card__wrapper {
@@ -143,7 +144,7 @@
       margin-top: -76px;
       padding: 0 21px;
       grid-column: span 3;
-      padding-top: 33px;
+      padding-top: 6px;
     }
 
     .card__title {

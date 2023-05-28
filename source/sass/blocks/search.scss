@@ -18,6 +18,7 @@
   line-height: 26px;
   color: #000000;
   text-align: center;
+  margin: 0;
 }
 
 .search__paragraph {
@@ -28,9 +29,9 @@
   line-height: 21px;
   color: #333333;
   text-align: center;
-  margin-top: 21px;
   text-transform: uppercase;
-  margin-bottom: 34px;
+  margin-top: 21px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   max-width: 278px;
@@ -85,6 +86,7 @@
 @media (min-width: $tablet-width) {
   .search {
     padding-top: 60px;
+    margin-bottom: -24px;
   }
 
   .search__button {
@@ -111,6 +113,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .search {
+    margin-bottom: -68px;
+  }
+
   .search__button {
     margin-bottom: 66px;
     max-width: 458px;

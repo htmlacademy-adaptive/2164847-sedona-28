@@ -14,7 +14,8 @@
   line-height: 26px;
   color: #ffffff;
   text-align: center;
-  padding-top: 39px;
+  padding-top: 37px;
+  margin: 0;
 }
 
 .advantages__picture-img {
@@ -31,7 +32,7 @@
   color: #ffffff;
   text-align: center;
   margin-top: 11px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .advantages__paragraph {
@@ -42,7 +43,7 @@
   line-height: 21px;
   color: #ffffff;
   text-align: center;
-  padding-bottom: 37px;
+  padding-bottom: 23px;
   text-transform: uppercase;
 }
 
@@ -76,7 +77,7 @@
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
-    max-width: 150px;
+    max-width: 170px;
     margin: 0 auto;
     padding-top: 52px;
   }
@@ -110,7 +111,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    margin-top: 72px;
+    margin-top: 68px;
   }
 
   .advantages__paragraph {
