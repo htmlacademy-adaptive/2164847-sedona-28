@@ -50,7 +50,16 @@
   margin-top: -15px;
 }
 
+.promo__picture {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
+  .promo-catalog-img {
+    width: 457px;
+    height: 78px;
+  }
+
   .promo.promo--inside::after {
     background-image: url("../img/catalog-after-pablet.svg");
   }
@@ -58,6 +67,7 @@
   .promo__picture {
     width: 461px;
     height: 350px;
+    margin-top: -10px;
   }
 
   .promo::after {
@@ -78,6 +88,11 @@
 @media (min-width: $desktop-width) {
   .promo.promo--inside::after {
     background-image: url("../img/catalog-after-desktop.svg");
+  }
+
+  .promo-catalog-img {
+    width: 460px;
+    height: 80px;
   }
 
   .promo::after {

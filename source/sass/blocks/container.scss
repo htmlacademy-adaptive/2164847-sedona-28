@@ -9,6 +9,7 @@
   color: #000000;
   text-align: center;
   text-transform: uppercase;
+  margin-top: -2px;
 }
 
 .container {
@@ -27,6 +28,7 @@
   color: #000000;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .container__video {
@@ -38,7 +40,7 @@
 }
 
 .container__wrapper {
-  gap: 27px;
+  gap: 11px;
   padding: 0 5px;
   display: flex;
   flex-direction: column;
@@ -57,10 +59,12 @@
 
   .container__title {
     font-size: 30px;
+    margin-top: 67px;
   }
 
   .container__wrapper {
-    gap: 32px;
+    gap: 6px;
+    margin-top: -29px;
   }
 
   .container__video {
@@ -74,7 +78,32 @@
     padding: 67px 200px 60px 200px;
   }
 
+  .container__wrapper {
+    gap: 3px;
+  }
+
   .container__video {
     max-width: 800px;
+    margin-top: 49px;
+  }
+
+  .container__title {
+    margin-top: 75px;
+  }
+}
+
+.container__video-btn {
+  transition: 0.6s;
+  display: table;
+  margin: 0 auto -24px;
+}
+
+.container__video-btn:hover {
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet-width) {
+  .container__video-btn {
+    margin-bottom: 0;
   }
 }
