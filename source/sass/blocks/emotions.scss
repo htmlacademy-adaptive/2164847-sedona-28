@@ -26,6 +26,7 @@
   transition: 0.3s;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
+  height: 150px;
 }
 
 .emotions__textarea::placeholder {
@@ -57,6 +58,9 @@
   line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
   margin-bottom: 50px;
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 4px;
 }
 
 .emotions__emotions {
@@ -86,7 +90,7 @@
   text-transform: uppercase;
   color: #ffffff;
   padding: 16px 30px;
-  margin-top: 21px;
+  margin-top: 24px;
   cursor: pointer;
 }
 
@@ -128,15 +132,16 @@
   }
 
   .emotions__textarea {
-    height: 130px;
-    margin-left: 41px;
+    height: 160px;
+    margin-left: 39px;
     margin-right: 41px;
     padding: 14px;
+    margin-top: -4px;
   }
 
   .emotions__button {
     margin-left: 0;
-    margin-top: 0;
+    margin-top: -35px;
   }
 
   .emotions__item {
@@ -144,6 +149,7 @@
     line-height: 21px;
     text-transform: uppercase;
     margin-bottom: 0;
+    margin-top: -18px;
   }
 }
 

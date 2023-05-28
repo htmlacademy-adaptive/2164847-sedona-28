@@ -1,10 +1,10 @@
 @import "global/variables.scss";
 
 .features {
-  padding-left: 18px;
+  padding-left: 14px;
   padding-right: 18px;
   position: relative;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
 }
 
 .features::after {
@@ -33,8 +33,8 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  margin-bottom: 35px;
-  margin-top: 32px;
+  margin-bottom: 37px;
+  margin-top: 30px;
   max-width: 271px;
   margin-left: auto;
   margin-right: auto;
@@ -56,12 +56,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    padding-left: 17px;
+  }
   .features__title {
     font-size: 21px;
     padding-right: 124px;
     padding-left: 124px;
     max-width: 465px;
-    margin-top: 50px;
+    margin-top: 53px;
   }
 
   .features::after {
